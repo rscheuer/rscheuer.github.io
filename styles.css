@@ -1,0 +1,104 @@
+@import 'https://fonts.googleapis.com/css?family=Archivo+Black|Vollkorn:400,700|Work+Sans|Yatra+One';
+
+    body {
+        font-family: 'Vollkorn', serif;
+        font-weight: 400;
+    }
+
+    .size {
+    width: 45vw;
+    height: auto;
+    text-align:center;
+    }
+
+    
+
+
+    #container {
+        display: flex;           /* establish flex container */
+        flex-direction: row;  /* make main axis vertical */
+        justify-content: center; /* center items vertically, in this case */
+        align-items: center;     /* center items horizontally, in this case */
+        height: 300px;
+    }
+
+    .box {
+        width: 50%;
+        margin: 5px;
+        text-align: center;     /* will center text in <p>, which is not a flex item */
+    }
+
+    #bluebox {
+        background-color:#0037ff;
+        color:White;
+        font-size: 150%;
+    }
+
+    #whitebox {
+        border:1px solid #0037ff;
+        background-color:White;
+        color:#0037ff;
+        font-size: 150%;
+    }
+
+    #heading {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 250%;
+        color:#0037ff;
+        text-align: center;     /* will center text in <p>, which is not a flex item */
+    }
+
+    #other {
+        font-family: 'Vollkorn', serif;
+        font-family: 'Work Sans', sans-serif;
+        font-family: 'Archivo Black', sans-serif;
+        font-family: 'Yatra One', cursive;
+    }
+
+    #my-div {
+        background-color: #f00;
+        width: 200px;
+        height: 200px;
+    }
+
+    a.fill-div {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .add_to_cart:hover {
+        background-color:#0037ff;
+        text-decoration:none;
+        color:#FFFFFF;
+    }
+
+    .add_to_cart {
+        width: 50%;
+        margin: 5px;
+        text-align: center; 
+        cursor:pointer;
+        background-color:White;
+        display:block;
+        height:auto;
+        border-width:1px;
+        border-style:solid;
+        border-color:#0037ff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
