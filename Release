@@ -1,9 +1,0 @@
-Origin: Ryan Scheuer's Repo
-Label: Ryan Scheuer's Repo
-Suite: stable
-Version: 1.0
-Codename: rscheuer
-Architecture: iphoneos-arm
-Components: main
-Description: Ryan Scheuer's Repo
-MD5Sum:
