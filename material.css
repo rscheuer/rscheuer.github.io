@@ -1,0 +1,84 @@
+
+
+@import url(//fonts.googleapis.com/css?family=Oswald:300);
+html, body, .wrapper {
+  height: 100%;
+}
+
+.circlelink {
+
+    display:inline;
+    width:100px;
+    height:100px;
+    font-size:20px;
+    color:#5C5C5C;
+    line-height:100px;
+    text-align:center;
+    text-decoration:none;
+    vertical-align:middle;
+
+}
+
+.circlelink-name {
+
+    display:inline;
+    width:100px;
+    height:100px;
+    font-size:40px;
+    color:#386AFF;
+    line-height:100px;
+    text-align:center;
+    text-decoration:none;
+    vertical-align:middle;
+
+}
+
+#name {
+   display:inline;
+    width:100px;
+    height:100px;
+    font-size:40px;
+    color:#386AFF;
+    line-height:100px;
+    text-align:center;
+    text-decoration:none;
+    vertical-align:middle; 
+}
+
+
+
+.circlelink:hover {
+
+    text-decoration:none;
+    background:white;
+
+}
+
+#refer {
+    top:20%;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#refer ul {
+
+    background-color: white;
+    clear:both;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+#refer ul li {
+
+    display:inline-block;
+    position: relative;
+    height: auto;
+    padding: 0;
+    margin-left: 5%;
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+
+}
