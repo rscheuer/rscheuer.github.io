@@ -1,0 +1,19 @@
+#type {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 200;
+}
+@media screen and (min-width: 768px) {
+    #type {
+        font-size: 23px;
+    }
+}
+
+.typewrite{
+	color:white;
+}
+
+#portfolio-grid{
+	margin-top: 10%;
+	height: 10%;
+}
