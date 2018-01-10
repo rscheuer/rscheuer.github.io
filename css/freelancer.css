@@ -8,7 +8,7 @@
 
 :root {
   --navColor: #FFFFFF;
-  --accColor: #FFA08B;
+  --accColor: #FFFFFF;
   --brandColor:#386AFF;
 }
 
@@ -60,7 +60,7 @@ hr.star-primary:after {
   padding: 0 0.25em;
 }
 hr.star-light {
-  border-color: white;
+  border-color: #333;
 }
 hr.star-light:after {
   background-color: #18BC9C;
@@ -109,6 +109,7 @@ header .intro-text .skills {
   }
   header .intro-text .name {
     font-size: 4.75em;
+    color: #333;
   }
   header .intro-text .skills {
     font-size: 1.75em;
@@ -204,8 +205,8 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #21216A;
-  color: white;
+  background: #white;
+  color: #333;
 }
 @media (max-width: 767px) {
   section {
