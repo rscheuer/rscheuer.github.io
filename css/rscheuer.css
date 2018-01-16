@@ -13,6 +13,10 @@
 	color:#333;
 }
 
+.container{
+  background-color: white;
+}
+
 #portfolio-grid{
 	margin-top: 10%;
 	height: 10%;
