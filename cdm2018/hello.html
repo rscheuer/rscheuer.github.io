@@ -5,7 +5,50 @@
   		Ryan Scheuer
   	</title>
   </head>
-  <body>
+  
+  <!-- Styles -->	
+<style style="text/css">
+.example5 {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+.example5 h1 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ /* Apply animation to this element */	
+ -moz-animation: example5 5s linear infinite alternate;
+ -webkit-animation: example5 5s linear infinite alternate;
+ animation: example5 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example5 {
+ 0%   { -moz-transform: translateX(70%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes example5 {
+ 0%   { -webkit-transform: translateX(70%); }
+ 100% { -webkit-transform: translateX(0%); }
+}
+@keyframes example5 {
+ 0%   { 
+ -moz-transform: translateX(70%); /* Firefox bug fix */
+ -webkit-transform: translateX(70%); /* Firefox bug fix */
+ transform: translateX(70%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateX(0%); 
+ }
+}
+</style>
+
+  <body class="example5">
   	<h1>Ryan Scheuer's Github Pages Site</h1>
     <nav>My Menu</nav>
     <main>
