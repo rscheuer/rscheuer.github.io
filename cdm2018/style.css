@@ -1,10 +1,55 @@
-h1 { color: lightgray; }
+body { 
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Crimson Text', serif;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+}
 
 ul.main-menu {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 ul.main-menu>li {
     display: inline;
+    padding-right: 15px;
+}
+
+
+.container {
+	width: 80%;
+	margin-left: 10%;
+}
+
+main, footer, nav {
+	width: 80%;
+	margin-left: 10%;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: white;
+	
+}
+
+
+
+/* Variable Size fonts */
+/* 16px @ 480px increasing to 32px @ 1920px */
+@media (min-width: 480px) {
+  :root {
+    font-size: calc(1rem + ((1vw - 4.8px) * 1.1111));
+    /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 1920px) {
+  :root {
+    font-size: 32px;
+  }
 }
