@@ -77,6 +77,6 @@ a:hover {
   margin-left: 5px;
   margin-top: 10px;
   max-width: 100%; 
-  display:block; 
+  /*display:block; */
   height: auto;
 }
