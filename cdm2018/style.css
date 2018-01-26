@@ -37,12 +37,15 @@ ul.main-menu>li {
 main, footer, nav {
 	width: 80%;
 	margin-left: 10%;
+	margin-bottom: 5%;
 }
 
 footer {
-	position:absolute;
-	bottom:5px;
-	width:100%;
+	position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: 1rem;
 }
 
 a {
@@ -53,7 +56,6 @@ a:hover {
 	color: white;
 	
 }
-
 
 
 /* Variable Size fonts */
@@ -69,4 +71,12 @@ a:hover {
   :root {
     font-size: 32px;
   }
+}
+
+.img-responsive {
+  margin-left: 5px;
+  margin-top: 10px;
+  max-width: 100%; 
+  display:block; 
+  height: auto;
 }
