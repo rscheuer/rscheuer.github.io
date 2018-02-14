@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,700" rel="stylesheet">
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div class=container>
+
+<div id='myNav' class="sidenav">
+  <p id="name">Ryan Scheuer</p>
+  <a id="portfolio" href="#">Portfolio</a>
+  <a id="resume" href="#resume">Resume</a>
+  <a id="contact" href="#contact">Contact</a>
+  <a id="help" href="#help">Quiet</a>
+</div>
+
+<div class="main">
+  <h2>Portfolio</h2>
+  
+  <img class="p-img" src="img/thrill.png" alt="" />
+  <p id="title">01 Advertisement</p>
+  <p>The purpose of this assignment was to take an old advert and remake it using modern techniques.  I chose an advertisement for a soap product known as Thrill.  The initial logo and slogan have been placed on an eye catching graphic, completely changing the tone of the piece.</p>
+  <br>
+  
+  <img class="p-img" src="img/dots.png" alt="" />
+  <p id="title">02 Little Dots</p>
+  <p>Used Xbox 360 Kinect camera and Processing 3 to map surroundings to dots.  Used for live music graphics.</p>
+  <br>
+  
+  
+  
+  <img class="p-img" src="img/metal.png" alt="" />
+  <p id="title">03 Metal Tests</p>
+  <p>Testing the limits of metal simulation and my GPU.</p>
+  <br>
+  
+  <img class="p-img" src="img/atypical.png" alt="" />
+  <p id="title">04 Atypical Logotype</p>
+  <p>Lettering and design for Atypical Magazine.</p>
+  <br>
+  
+  <img class="p-img" src="img/finalhigh.png" alt="" />
+  <p id="title">05 Brickface Bold</p>
+  <p>A typeface that feels like a brick in the face</p>
+  <br>
+  
+</div>
+     
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#help").click(function(){
+	    $('body').css('color', 'white');
+	    $('name').css('color','white');
+	    $('.sidenav a').css('color', 'white');
+	});
+	
+	$(".main").click(function(){
+	    $('body').removeAttr('style');
+	    $('name').removeAttr('style');
+	    $('.sidenav a').removeAttr('style');
+	});
+	
+	});
+</script>
+</html> 
