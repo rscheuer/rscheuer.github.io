@@ -18,6 +18,21 @@ p {
 	line-height: 1.58;
 }
 
+.table {
+	width: 100%;
+	text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
 .distort:hover {
 	color: red;
 }
