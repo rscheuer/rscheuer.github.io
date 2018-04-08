@@ -6,7 +6,6 @@ body {
 	
 	color: rgba(0,0,0,.84);
 	background-color: #fffbf7;
-	
 }
 
 h1 {
@@ -99,4 +98,8 @@ a:hover {
   max-width: 100%; 
   /*display:block; */
   height: auto;
+}
+
+#vh-img{
+	height: 100vh;
 }
