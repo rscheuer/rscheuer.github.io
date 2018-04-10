@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Somewhat';
+    src: url('/fonts/Somewhat.woff2') format('woff2'),
+        url('/fonts/Somewhat.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadratik';
+    src: url('/fonts/Quadratik.woff2') format('woff2'),
+        url('/fonts/Quadratik.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body { 
 	/*font-family: 'Roboto', sans-serif;*/
 	font-family: 'Crimson Text', serif;
@@ -15,6 +31,45 @@ h1 {
 p {
 	font-family: 'Crimson Text', serif;
 	line-height: 1.58;
+}
+
+#somewhat {
+	font-family: 'Somewhat';
+	font-size: 8px;
+	line-height: 10.0;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.quad {
+	font-family: 'Quadratik';
+	/*line-height: 2.0;*/
+}
+
+.ghost-input {
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 25px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #4b545f;
+  background: rgba(255, 255, 255, 0);
+  /*font-family: Open Sans,Verdana;*/
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.ghost-input:focus {
+  border-bottom:1px solid #ddd;
 }
 
 .table {
