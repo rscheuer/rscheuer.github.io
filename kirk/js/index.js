@@ -51,20 +51,17 @@
 			TweenMax.set(carousel, {z:-(radius)})
 			
 			// create carousel item props
-			
 			for ( var i = 0; i < itemLength; i++ )
 			{
 				var $item = item.eq(i);
 				var $block = $item.find('.carouselItemInner');
 				
-        //thanks @chrisgannon!        
-        TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
+			//thanks @chrisgannon!        
+			TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
 				
 				animateIn( $item, $block )						
 			}
 			
-			// set mouse x and y props and looper ticker
-			window.addEventListener( "mousemove", onMouseMove, false );
 			
 			// touch
 			window.addEventListener("touchstart", touchHandler, true);
@@ -72,6 +69,9 @@
 			window.addEventListener("touchend", touchHandler, true);
 			window.addEventListener("touchcancel", touchHandler, true);
 			// end touch
+			// set mouse x and y props and looper ticker
+			window.addEventListener( "mousemove", onMouseMove, false );
+			
 			ticker = setInterval( looper, 1000/60 );			
 		}
 		
