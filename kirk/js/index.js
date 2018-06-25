@@ -51,27 +51,20 @@
 			TweenMax.set(carousel, {z:-(radius)})
 			
 			// create carousel item props
+			
 			for ( var i = 0; i < itemLength; i++ )
 			{
 				var $item = item.eq(i);
 				var $block = $item.find('.carouselItemInner');
 				
-			//thanks @chrisgannon!        
-			TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
+        //thanks @chrisgannon!        
+        TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
 				
 				animateIn( $item, $block )						
 			}
 			
-			
-			// touch
-			window.addEventListener("touchstart", touchHandler, true);
-			window.addEventListener("touchmove", touchHandler, true);
-			window.addEventListener("touchend", touchHandler, true);
-			window.addEventListener("touchcancel", touchHandler, true);
-			// end touch
 			// set mouse x and y props and looper ticker
 			window.addEventListener( "mousemove", onMouseMove, false );
-			
 			ticker = setInterval( looper, 1000/60 );			
 		}
 		
@@ -95,40 +88,6 @@
 		}
 		
 		function onMouseMove(event)
-		{
-			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .0025;
-			mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;
-			mouseZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY ) - 200);
-		}
-		
-		function touchHandler(event)
-		{
-		    var touches = event.changedTouches,
-		        first = touches[0],
-		        type = "";
-		    switch(event.type)
-		    {
-		        case "touchstart": type = "mousedown"; break;
-		        case "touchmove":  type = "mousemove"; break;        
-		        case "touchend":   type = "mouseup";   break;
-		        default:           return;
-		    }
-		
-		    // initMouseEvent(type, canBubble, cancelable, view, clickCount, 
-		    //                screenX, screenY, clientX, clientY, ctrlKey, 
-		    //                altKey, shiftKey, metaKey, button, relatedTarget);
-		
-		    var simulatedEvent = window.createEvent("MouseEvent");
-		    simulatedEvent.initMouseEvent(type, true, true, window, 1, 
-		                                  first.screenX, first.screenY, 
-		                                  first.clientX, first.clientY, false, 
-		                                  false, false, false, 0/*left*/, null);
-		
-		    first.target.dispatchEvent(simulatedEvent);
-		    event.preventDefault();
-		}
-		
-		function onTouchMove(event)
 		{
 			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .0025;
 			mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;
