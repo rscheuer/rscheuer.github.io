@@ -99,18 +99,18 @@ textarea {
 
 @font-face {
 font-family: 'MyFontR';
-src: url('fonts/chill.woff2') format('woff2');
+src: url('/fonts/chill.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'MyFontB';
-src: url('fonts/bold.woff2') format('woff2');
+src: url('/fonts/bold.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'Somewhat';
 src: url('/fonts/Somewhat.woff2') format('woff2'),
-        url('fonts/Somewhat.woff') format('woff');
+        url('/fonts/Somewhat.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
@@ -118,15 +118,15 @@ font-style: normal;
 @font-face {
 font-family: 'Quadratik';
 src: url('/fonts/Quadratik.woff2') format('woff2'),
-        url('fonts/Quadratik.woff') format('woff');
+        url('/fonts/Quadratik.woff') format('woff');
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
 font-family: 'ICFB';
-src: url('fonts/IntegralCF-Bold.woff2') format('woff2'),
-        url('fonts/IntegralCF-Bold.woff') format('woff');
+src: url('/fonts/IntegralCF-Bold.woff2') format('woff2'),
+        url('/fonts/IntegralCF-Bold.woff') format('woff');
 font-weight: bold;
 font-style: bold;
 }

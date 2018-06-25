@@ -19,18 +19,20 @@ body {
 	font-family: 'Crimson Text', serif;
 	/*color: #0653fe;
 	background-color: #ffffff;*/
-	
 	color: rgba(0,0,0,.84);
-	background-color: #fffbf7;
+	/*background-color: #fffbf7;*/
+	background-color: #F8F8F8;
 }
 
 h1 {
 	line-height: 1.04;
+	letter-spacing: -.003em;
 }
 
 p {
 	font-family: 'Crimson Text', serif;
 	line-height: 1.58;
+	letter-spacing: -.003em;
 }
 
 #somewhat {
@@ -106,12 +108,28 @@ ul.main-menu>li {
 .container {
 	width: 80%;
 	margin-left: 10%;
+	text-align: center;
 }
 
-main, footer, nav {
+/*main, footer, nav {
 	width: 80%;
 	margin-left: 10%;
 	margin-bottom: 5%;
+}*/
+main, footer {
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+
+nav {
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+nav>a {
+	font-size: 12;
 }
 
 footer {
@@ -124,6 +142,7 @@ footer {
 
 a {
 	color: rgba(0,0,0,.84);
+	text-decoration: none;
 }
 
 a:hover {
@@ -131,6 +150,15 @@ a:hover {
 	
 }
 
+
+/*  CHANGE MARGIN FOR MOBILE */
+@media only screen and (max-width: 480px) {
+	main, footer, nav {
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 5%;
+	}
+}
 
 /* Variable Size fonts */
 /* 16px @ 480px increasing to 32px @ 1920px */
@@ -142,6 +170,7 @@ a:hover {
 }
 /* Prevent font scaling beyond this breakpoint */
 @media (min-width: 1920px) {
+		
   :root {
     font-size: 32px;
   }
@@ -156,5 +185,5 @@ a:hover {
 }
 
 #vh-img{
-	height: 100vh;
+	max-height: 100vh;
 }
