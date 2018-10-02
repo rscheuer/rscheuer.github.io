@@ -42,6 +42,8 @@ header {
 	/*padding-bottom:10px;*/
 }
 
+/*|||||||||||||||||||||  DESKTOP ||||||||||||||||||||||||*/
+
 .title {
 	margin-left: -2px;
 	font-family: ICFB;
@@ -117,6 +119,7 @@ a:hover {
 	height:1000px;*/
 	width: 100%;
 	height: 100%;
+	/*animation: swirl 40s steps(10000, end) infinite;*/
 }
 
 #carouselContainer {
@@ -129,6 +132,7 @@ a:hover {
 	height:1000px;*/
 	width: 100%;
 	height: 100%;
+	
 }
 
 .carouselItem {
@@ -140,6 +144,7 @@ a:hover {
 	margin-left: 0px;
 	margin-top: 0px;
 	visibility: hidden;
+	
 }
 
 .carouselItemInner {
@@ -156,6 +161,51 @@ a:hover {
 	margin-top: -90px;
 	text-align: center;
 }
+
+
+/*|||||||||||||||||||||  END DESKTOP ||||||||||||||||||||||||*/
+
+/*|||||||||||||||||||||  BEGIN MOBILE ||||||||||||||||||||||||*/
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.size-med {
+	font-family: 'MyFontB';
+	font-size: 36px;
+	letter-spacing: -2.5px;
+	/*margin-left:30px;*/
+}
+
+.carousel {
+  position: relative;  
+  width: 100%;
+  height: 100%;
+  perspective: 900px;
+  
+}
+.carousel-pivot {
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  transform-style: preserve-3d;
+  /*animation: swirl 40s steps(10000, end) infinite;*/
+}
+.carousel-item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 0, 153, 0.8);
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*|||||||||||||||||||||  END MOBILE ||||||||||||||||||||||||*/
+
 	
 	
 /* 16px @ 480px increasing to 32px @ 1920px */
@@ -214,3 +264,12 @@ a:hover {
 		font-size: 20px;
 	}
 }
+
+@keyframes swirl {   
+  from {
+    transform: rotateY(-360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+} 
