@@ -1,0 +1,93 @@
+body {
+	/*font-family: 'Work Sans', sans-serif;*/
+	font-family: 'Inconsolata', monospace;
+}
+
+h1, h2, h3 {
+	/*font-family: 'Playfair Display', serif;*/
+	/*font-family: 'Merriweather', serif;*/
+	font-family: 'Inconsolata', monospace;
+}
+
+.box {
+	/*border: 2px solid black;*/
+	padding: 1%;
+	margin: 1%;
+}
+
+.center-back-img {
+	position: fixed;
+	max-width: 50%;
+	max-height: 100%;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*-webkit-box-shadow: 0px 10px 31px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 31px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 31px -8px rgba(0,0,0,0.75);*/
+}
+
+.hiddenimg {
+  display: none;
+  /*position:absolute;
+  z-index:0;*/
+}
+
+p {
+	z-index: 1;
+	/*position: relative;*/
+}
+
+.hiddentxt {
+  /*font-weight: bold;*/
+  color: #F00;
+ /*position: relative;*/
+}
+
+.hiddentxt a {
+  /*color: #F00;*/
+  /*text-decoration: none;*/
+  /*color: black;*/
+  /*background-color: #d2fe08;*/
+}
+
+a {
+	/*border-bottom: 1px solid #0b45fd;*/
+	/*text-decoration: none;*/
+	color: black;
+	/*background-color: #0b45fd;*/
+}
+
+
+.hiddenclick {
+  font-weight: bold;
+  color: #F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hiddenclick a {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddenclick a:visited {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+  display: block;
+  position:absolute;
+  /*top: 30vh;*/
+  z-index: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+	
+}
+
+@media only screen and (max-width: 480px) {
+	
+}
