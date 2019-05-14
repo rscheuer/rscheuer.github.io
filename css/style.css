@@ -1,285 +1,358 @@
-.items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.items__inner {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  height: 800px;
-  background: #fff;
-}
-.items__layer .items__item {
-  position: absolute;
-  box-shadow: 0 32px 40px -20px rgba(0, 0, 0, 0.25);
-}
-.items__layer .items__item:after {
-  content: attr(data-title);
-  position: absolute;
-  line-height: 20px;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  visibility: hidden;
-  opacity: 0;
-}
-.items__layer .items__item:hover:after {
-  visibility: visible;
-  opacity: 1;
-}
-.items__layer:nth-child(1) .items__item {
-  top: 200px;
-  left: 120px;
-  width: 340px;
-  height: 340px;
-  background: #9FBEBD;
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(1) .items__item:after {
-  top: -23px;
-  left: 0;
-  color: #9FBEBD;
-}
-.items__layer:nth-child(2) .items__item {
-  top: 440px;
-  left: 400px;
-  width: 240px;
-  height: 200px;
-  background: #413E4A;
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(2) .items__item:after {
-  bottom: -23px;
-  right: 0;
-  color: #413E4A;
-}
-.items__layer:nth-child(3) .items__item {
-  top: 400px;
-  left: 160px;
-  width: 300px;
-  height: 300px;
-  background: #F0B49E;
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(3) .items__item:after {
-  bottom: -23px;
-  left: 0;
-  color: #C16C56;
-}
-.items__layer:nth-child(4) .items__item {
-  top: 100px;
-  left: 400px;
-  width: 350px;
-  height: 480px;
-  background: #B38184;
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(4) .items__item:after {
-  top: -23px;
-  right: 0;
-  color: #B38184;
-}
-.items__layer:nth-child(5) .items__item {
-  top: 300px;
-  left: 300px;
-  width: 200px;
-  height: 200px;
-  background: #F7E4BE;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(5) .items__item:after {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  margin: auto;
-  text-align: center;
-  color: #C16C56;
+/* RYAN SCHEUER HOME PAGE CSS TYPE BEAT */
+
+html, body {
+	height: 100%;
+	margin: 0px;
 }
 
-/*Important:*/
-.link-spanner{
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-
-  /* edit: fixes overlap error in IE7/8, 
-     make sure you have an empty gif 
-  background-image: url('empty.gif');*/
-}  
-
-@media only screen and (max-width: 500px) {
-.items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.items__inner {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  height: 800px;
-  background: #fff;
-}
-.items__layer .items__item {
-  position: absolute;
-  box-shadow: 0 32px 40px -20px rgba(0, 0, 0, 0.25);
-}
-.items__layer .items__item:after {
-  content: attr(data-title);
-  position: absolute;
-  line-height: 20px;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  visibility: visible;
-  opacity: 1;
-}
-.items__layer .items__item:hover:after {
-  visibility: visible;
-  opacity: 1;
-}
-.items__layer:nth-child(1) .items__item {
-  top: 200px;
-  left: 120px;
-  width: 340px;
-  height: 340px;
-  background: #9FBEBD;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(1) .items__item:after {
-  top: -23px;
-  left: 0;
-  color: #9FBEBD;
-}
-.items__layer:nth-child(2) .items__item {
-  top: 440px;
-  left: 400px;
-  width: 240px;
-  height: 200px;
-  background: #413E4A;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(2) .items__item:after {
-  bottom: -23px;
-  right: 0;
-  color: #413E4A;
-}
-.items__layer:nth-child(3) .items__item {
-  top: 400px;
-  left: 160px;
-  width: 300px;
-  height: 300px;
-  background: #F0B49E;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(3) .items__item:after {
-  bottom: -23px;
-  left: 0;
-  color: #C16C56;
-}
-.items__layer:nth-child(4) .items__item {
-  top: 100px;
-  left: 400px;
-  width: 350px;
-  height: 480px;
-  background: #B38184;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(4) .items__item:after {
-  top: -23px;
-  right: 0;
-  color: #B38184;
-}
-.items__layer:nth-child(5) .items__item {
-  top: 300px;
-  left: 300px;
-  width: 200px;
-  height: 200px;
-  background: #F7E4BE;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 0px solid #000000;
-}
-.items__layer:nth-child(5) .items__item:after {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  margin: auto;
-  text-align: center;
-  color: #C16C56;
+html {
+	/*background: rgb(255,117,0)!important;*/
 }
 
-/*Important:*/
-.link-spanner{
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-
-  /* edit: fixes overlap error in IE7/8, 
-     make sure you have an empty gif 
-  background-image: url('empty.gif');*/
-} 
+::-webkit-scrollbar {
+	width: 0px;  /* remove scrollbar space */
+	background: transparent;  /* optional: just make scrollbar invisible */
 }
+/* optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+}
+
+article {
+	height: 100%;
+}
+
+.is-red-text {
+	color: #d43232;
+}
+
+.sidebar {
+	padding: 20px;
+	/*background-color: white;*/
+}
+
+/* sidebar bottom info */
+
+#HASH {
+	display: flex;
+	justify-content: space-between;
+}
+
+.scolling {
+	position: fixed !important;
+	height: 100vh !important;
+	overflow-y: scroll !important;
+}
+
+.body-font {
+	font-size: 1.2rem;
+	line-height: 1.4;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.85);
+	font-family: "Helvetica Neue", Helvetica, sans-serif, "Helvetica Roman", Icons /*!System*/;
+	font-style: normal;
+}
+
+a {
+	/*text-decoration: none;*/
+	color: inherit !important;
+	text-decoration: underline solid transparent !important;
+	transition: text-decoration 0.5s ease;
+}
+
+/*a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}*/
+
+a:hover {
+	text-decoration: underline solid black !important;
+}
+
+/*a :hover {
+	text-decoration: underline !important;
+}*/
+
+ol {
+	margin: 0px 0;
+	padding: 0;
+	list-style: decimal inside;
+}
+
+ol li {
+	margin: 0px;
+	padding: 0px;
+    /*text-indent: -2.2em;*/
+	margin-left: 1.2em;
+}
+
+ol li:hover {
+	/*color: #2291ff;*/
+}
+
+/* ++++++ SCROLL COLUMNS */
+
+.wrap {
+	display: flex;
+}
+
+.left {
+	flex-basis: 40%;
+	height: 100vh;
+	overflow: auto;
+}
+
+.right {
+	flex-basis: 60%;
+	height: 100vh;
+	overflow: auto;
+}
+
+/* ++++ IMAGE ANIMATION */
+
+.image-spin {
+	position: absolute;
+    /*top: 50%;
+    left: 50%;*/
+	top: 10%;
+	left: 40%;
+	width: 120px;
+	height: 120px;
+	margin: -60px 0 0 -60px;
+	-webkit-animation: spin 4s linear infinite;
+	-moz-animation: spin 4s linear infinite;
+	animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+100% {
+	-moz-transform: rotate(360deg);
+}
+}
+@-webkit-keyframes spin {
+100% {
+	-webkit-transform: rotate(360deg);
+}
+}
+@keyframes spin {
+100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+}
+
+
+/* TOP LINKS */
+
+.info-instagram {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	text-align: right;
+}
+
+.info-instagram span {
+	margin-right: 15px;
+}
+
+/* GRADIENT */
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77b44b+0,ffcb1d+50,ff7500+100 */
+
+.my-gradient {
+	background: rgb(119,180,75); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(119,180,75) 0%, rgb(255,203,29) 50%, rgb(255,117,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(119,180,75) 0%,rgb(255,203,29) 50%,rgb(255,117,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background: linear-gradient(to bottom, rgb(119,180,75) 0%,rgb(255,203,29) 50%,rgb(255,117,0) 100%); /* W3C, IE10+, FF16+, C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77b44b', endColorstr='#ff7500',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* INFO */
+
+.information {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.portrait {
+	width: 150px;
+	height: auto;
+}
+
+.is-centered-text {
+	text-align: center;
+}
+
+.social-columns {
+	position: absolute !important;
+	top: 90px;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.social-columns div {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+
+/* PROJECT PAGES */
+
+.project-title {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.small-text {
+	font-size: 0.83rem;
+	line-height: 1.4;
+	margin-top: 8px;
+}
+
+.project-body {
+	margin-bottom: 10px;
+}
+
+.project-body p {
+	text-indent: 50px;
+	margin-bottom: 10px;
+}
+
+.project-column {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+/* RESPONSIVE STUFF */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+	
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.wrap {
+		flex-direction: column-reverse;
+	}
+	
+	.left {
+		/*height: auto;*/
+	}
+	
+	.right {
+		height: auto;
+	}
+	
+	.information {
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.9);
+		color: rgb(255,117,0);
+		padding: 15px;
+		border-radius: 10px;
+		z-index: 10;
+	}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.wrap {
+		flex-direction: column-reverse;
+	}
+	
+	.left {
+		/*height: auto;*/
+		overflow: visible;
+	}
+	
+	.right {
+		height: auto;
+	}
+	
+	.information {
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.9);
+		color: rgb(255,117,0);
+		padding: 15px;
+		border-radius: 10px;
+		z-index: 10;
+		border: 1px black solid;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
