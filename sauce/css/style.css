@@ -1,0 +1,360 @@
+@font-face {
+font-family: 'MyFontR';
+src: url('/fonts/chill.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'MyFontB';
+src: url('/fonts/bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'Somewhat';
+src: url('/fonts/Somewhat.woff2') format('woff2'),
+        url('/fonts/Somewhat.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Quadratik';
+src: url('/fonts/Quadratik.woff2') format('woff2'),
+        url('/fonts/Quadratik.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+ol {
+	font-family: 'MyFontR';
+}
+
+h1, h2 {
+	font-family: 'MyFontB';
+}
+
+/* Setting fade transition and default settings */
+
+body {
+	color: #000;
+	background-color: #f4f4f4;
+	transition: background-color .25s ease;
+}
+
+/* panel styles */
+
+.panel {
+	/* min height incase content is higher than window height */
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: sans-serif;
+	  /* outline: 10px solid hotpink; */
+	  /* turn above on to see the edge of panels */
+}
+
+
+
+/* colours */
+
+.color-violet {
+	background-color: #7A4EAB;
+}
+
+#one {
+	color: white;
+}
+
+.color-indigo {
+	background-color: #4332CF;
+}
+
+#two {
+	color: #f0bff1;
+}
+
+.color-blue {
+	background-color: #2F8FED;
+}
+
+#three {
+	color: #2a502d;
+}
+
+.color-green {
+	background-color: #4DCF42;
+}
+
+#four {
+	color: #463b1d;
+}
+
+.color-yellow {
+	background-color: #FAEB33;
+}
+
+.color-orange {
+	background-color: #F19031;
+}
+
+.color-red {
+	background-color: #F2293A;
+}
+
+
+/* MY CSS HELL YEAH */
+
+.toplink {
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.toplink a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.logo {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#somewhat {
+	font-family: 'Somewhat';
+	font-size: 8px;
+	line-height: 7.0;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.quad {
+	font-family: 'Quadratik';
+	line-height: 3.0;
+}
+
+.bold {
+	font-family: 'MyFontB';
+}
+
+.logo-box {
+	width: 100%;
+	align-items: center;
+}
+
+body {
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Crimson Text', serif;
+	color: rgba(0,0,0,.84);
+	background-color: #fffbf7;
+}
+
+h1 {
+	line-height: 1.04;
+}
+
+p {
+	/*font-family: 'Crimson Text', serif;*/
+	font-family: 'MyFontR';
+	line-height: 1.58;
+}
+
+.distort:hover {
+	color: red;
+}
+
+ul.main-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+}
+
+ul.main-menu>li {
+	display: inline;
+	padding-right: 15px;
+}
+
+.container {
+	/*width: 80%;
+	margin-left: 10%;*!/*/
+}
+
+main, footer, nav {
+	width: 80%;
+	/*margin-left: 10%;*/
+	margin-bottom: 5%;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+.toplink a {
+	color: rgba(0,0,0,.3) !important;
+	font-family: 'MyFontB';
+}
+
+.toplink a:hover {
+	color: rgba(0,0,0,.05) !important;
+}
+
+a {
+	font-family: 'MyFontB';
+	color: inherit; /* blue colors for links too */
+	text-decoration: inherit; /* no underline */
+}
+
+@media (max-width: 480px) {
+	.logo {
+		width: 98;
+		/*margin-left: 1%;*/
+	}
+	
+	#somewhat {
+		font-size: 4px;
+	}
+}
+
+/* Variable Size fonts */
+/* 16px @ 480px increasing to 32px @ 1920px */
+
+@media (min-width: 480px) {
+	:root {
+		font-size: calc(1rem + ((1vw - 4.8px) * 1.1111));
+	    /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
+	}
+}
+/* Prevent font scaling beyond this breakpoint */
+
+@media (min-width: 1920px) {
+	:root {
+		font-size: 32px;
+	}
+}
+
+.img-responsive {
+	margin-left: 5px;
+	margin-top: 10px;
+	max-width: 100%;
+	max-height: 100vh; 
+	  /*display:block; */
+	height: auto;
+}
+
+/* full screen menu */
+
+.content {
+	text-align: right;
+	/*overflow: hidden;*/
+	background-color: rgba(255, 255, 255, 0);
+	position: fixed;
+	right: 0;
+	z-index: 0;
+}
+
+.main-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.main-nav li {
+	margin: 0 0 30px 0;
+}
+
+.main-nav li a {
+	font-size: calc(2rem + ((1vw - 4.8px) * 2.1111));
+	color: #000;
+	font-weight: bold;
+	line-height: 80px;
+}
+
+.main-nav li a:hover, .main-nav li a:focus {
+	border-bottom: 7px solid #000;
+}
+/*
+ * Full menu
+ * ----------
+ * Styles in this section are very
+ * important and you have to implement
+ * them if you want for your
+ * navigation to work properly.
+ *
+ */
+
+.full-menu {
+	visibility: hidden;
+	display: table;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	background-color: rgb(95, 218, 120);
+	  /*-webkit-transform: scale(0.85);
+	  -ms-transform: scale(0.85);
+	  transform: scale(0.85);*/
+	/*-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;*/
+	color: rgba(255, 255, 255, 0);
+}
+
+.full-menu--open {
+	visibility: visible;
+	opacity: 1;
+	/*-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);*/
+}
+
+.full-menu--transition {
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.full-menu--middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu-toggle {
+	border: 0;
+	color: inherit;
+	margin-top: 30px;
+	margin-right: 30px;
+	font-size: 40px;
+	background-color: transparent;
+}
+
+.menu-toggle:before {
+	content: '\f0c9';
+	font-family: 'FontAwesome';
+	margin: 0 0px 0 0;
+}
+
+.menu-toggle--close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.menu-toggle--close:before {
+	/*content: '\f00d';*/
+	content: '\f0c9';
+	color: #000;
+	font-size: 40px;
+	margin: 0;
+}
