@@ -1,358 +1,360 @@
-/* RYAN SCHEUER HOME PAGE CSS TYPE BEAT */
-
-html, body {
-	height: 100%;
-	margin: 0px;
+@font-face {
+font-family: 'MyFontR';
+src: url('/fonts/chill.woff2') format('woff2');
 }
 
-html {
-	/*background: rgb(255,117,0)!important;*/
+@font-face {
+font-family: 'MyFontB';
+src: url('/fonts/bold.woff2') format('woff2');
 }
 
-::-webkit-scrollbar {
-	width: 0px;  /* remove scrollbar space */
-	background: transparent;  /* optional: just make scrollbar invisible */
-}
-/* optional: show position indicator in red */
-
-::-webkit-scrollbar-thumb {
-	background: #FF0000;
+@font-face {
+font-family: 'Somewhat';
+src: url('/fonts/Somewhat.woff2') format('woff2'),
+        url('/fonts/Somewhat.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
 
-article {
-	height: 100%;
+@font-face {
+font-family: 'Quadratik';
+src: url('/fonts/Quadratik.woff2') format('woff2'),
+        url('/fonts/Quadratik.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
 
-.is-red-text {
-	color: #d43232;
+ol {
+	font-family: 'MyFontR';
 }
 
-.sidebar {
-	padding: 20px;
-	/*background-color: white;*/
+h1, h2 {
+	font-family: 'MyFontB';
 }
 
-/* sidebar bottom info */
+/* Setting fade transition and default settings */
 
-#HASH {
+body {
+	color: #000;
+	background-color: #f4f4f4;
+	transition: background-color .25s ease;
+}
+
+/* panel styles */
+
+.panel {
+	/* min height incase content is higher than window height */
+	min-height: 100vh;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	font-family: sans-serif;
+	  /* outline: 10px solid hotpink; */
+	  /* turn above on to see the edge of panels */
 }
 
-.scolling {
-	position: fixed !important;
-	height: 100vh !important;
-	overflow-y: scroll !important;
+
+
+/* colours */
+
+.color-violet {
+	background-color: #7A4EAB;
 }
 
-.body-font {
-	font-size: 1.2rem;
-	line-height: 1.4;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.85);
-	font-family: "Helvetica Neue", Helvetica, sans-serif, "Helvetica Roman", Icons /*!System*/;
-	font-style: normal;
+#one {
+	color: white;
+}
+
+.color-indigo {
+	background-color: #4332CF;
+}
+
+#two {
+	color: #f0bff1;
+}
+
+.color-blue {
+	background-color: #2F8FED;
+}
+
+#three {
+	color: #2a502d;
+}
+
+.color-green {
+	background-color: #4DCF42;
+}
+
+#four {
+	color: #463b1d;
+}
+
+.color-yellow {
+	background-color: #FAEB33;
+}
+
+.color-orange {
+	background-color: #F19031;
+}
+
+.color-red {
+	background-color: #F2293A;
+}
+
+
+/* MY CSS HELL YEAH */
+
+.toplink {
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.toplink a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.logo {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#somewhat {
+	font-family: 'Somewhat';
+	font-size: 8px;
+	line-height: 7.0;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.quad {
+	font-family: 'Quadratik';
+	line-height: 3.0;
+}
+
+.bold {
+	font-family: 'MyFontB';
+}
+
+.logo-box {
+	width: 100%;
+	align-items: center;
+}
+
+body {
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Crimson Text', serif;
+	color: rgba(0,0,0,.84);
+	background-color: #fffbf7;
+}
+
+h1 {
+	line-height: 1.04;
+}
+
+p {
+	/*font-family: 'Crimson Text', serif;*/
+	font-family: 'MyFontR';
+	line-height: 1.58;
+}
+
+.distort:hover {
+	color: red;
+}
+
+ul.main-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+}
+
+ul.main-menu>li {
+	display: inline;
+	padding-right: 15px;
+}
+
+.container {
+	/*width: 80%;
+	margin-left: 10%;*!/*/
+}
+
+main, footer, nav {
+	width: 80%;
+	/*margin-left: 10%;*/
+	margin-bottom: 5%;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+.toplink a {
+	color: rgba(0,0,0,.3) !important;
+	font-family: 'MyFontB';
+}
+
+.toplink a:hover {
+	color: rgba(0,0,0,.05) !important;
 }
 
 a {
-	/*text-decoration: none;*/
-	color: inherit !important;
-	text-decoration: underline solid transparent !important;
-	transition: text-decoration 0.5s ease;
+	font-family: 'MyFontB';
+	color: inherit; /* blue colors for links too */
+	text-decoration: inherit; /* no underline */
 }
 
-/*a:link {
-	text-decoration: none;
+@media (max-width: 480px) {
+	.logo {
+		width: 98;
+		/*margin-left: 1%;*/
+	}
+	
+	#somewhat {
+		font-size: 4px;
+	}
 }
 
-a:visited {
-	text-decoration: none;
-}*/
+/* Variable Size fonts */
+/* 16px @ 480px increasing to 32px @ 1920px */
 
-a:hover {
-	text-decoration: underline solid black !important;
+@media (min-width: 480px) {
+	:root {
+		font-size: calc(1rem + ((1vw - 4.8px) * 1.1111));
+	    /* Where: * 1.1111 = 100 * font_Size_Difference / viewport_Width_Difference */
+	}
+}
+/* Prevent font scaling beyond this breakpoint */
+
+@media (min-width: 1920px) {
+	:root {
+		font-size: 32px;
+	}
 }
 
-/*a :hover {
-	text-decoration: underline !important;
-}*/
-
-ol {
-	margin: 0px 0;
-	padding: 0;
-	list-style: decimal inside;
-}
-
-ol li {
-	margin: 0px;
-	padding: 0px;
-    /*text-indent: -2.2em;*/
-	margin-left: 1.2em;
-}
-
-ol li:hover {
-	/*color: #2291ff;*/
-}
-
-/* ++++++ SCROLL COLUMNS */
-
-.wrap {
-	display: flex;
-}
-
-.left {
-	flex-basis: 40%;
-	height: 100vh;
-	overflow: auto;
-}
-
-.right {
-	flex-basis: 60%;
-	height: 100vh;
-	overflow: auto;
-}
-
-/* ++++ IMAGE ANIMATION */
-
-.image-spin {
-	position: absolute;
-    /*top: 50%;
-    left: 50%;*/
-	top: 10%;
-	left: 40%;
-	width: 120px;
-	height: 120px;
-	margin: -60px 0 0 -60px;
-	-webkit-animation: spin 4s linear infinite;
-	-moz-animation: spin 4s linear infinite;
-	animation: spin 4s linear infinite;
-}
-@-moz-keyframes spin {
-100% {
-	-moz-transform: rotate(360deg);
-}
-}
-@-webkit-keyframes spin {
-100% {
-	-webkit-transform: rotate(360deg);
-}
-}
-@keyframes spin {
-100% {
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
-}
-}
-
-
-/* TOP LINKS */
-
-.info-instagram {
-	position: absolute;
-	top: 20px;
-	right: 10px;
-	text-align: right;
-}
-
-.info-instagram span {
-	margin-right: 15px;
-}
-
-/* GRADIENT */
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77b44b+0,ffcb1d+50,ff7500+100 */
-
-.my-gradient {
-	background: rgb(119,180,75); /* Old browsers */
-	background: -moz-linear-gradient(top, rgb(119,180,75) 0%, rgb(255,203,29) 50%, rgb(255,117,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgb(119,180,75) 0%,rgb(255,203,29) 50%,rgb(255,117,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	background: linear-gradient(to bottom, rgb(119,180,75) 0%,rgb(255,203,29) 50%,rgb(255,117,0) 100%); /* W3C, IE10+, FF16+, C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77b44b', endColorstr='#ff7500',GradientType=0 ); /* IE6-9 */
-}
-
-
-/* INFO */
-
-.information {
-	position: absolute;
-	top: 50%;
-	left: 40%;
-	text-align: center;
-}
-
-.hidden {
-	display: none;
-}
-
-.portrait {
-	width: 150px;
+.img-responsive {
+	margin-left: 5px;
+	margin-top: 10px;
+	max-width: 100%;
+	max-height: 100vh; 
+	  /*display:block; */
 	height: auto;
 }
 
-.is-centered-text {
+/* full screen menu */
+
+.content {
+	text-align: right;
+	/*overflow: hidden;*/
+	background-color: rgba(255, 255, 255, 0);
+	position: fixed;
+	right: 0;
+	z-index: 0;
+}
+
+.main-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 	text-align: center;
 }
 
-.social-columns {
-	position: absolute !important;
-	top: 90px;
+.main-nav li {
+	margin: 0 0 30px 0;
+}
+
+.main-nav li a {
+	font-size: calc(2rem + ((1vw - 4.8px) * 2.1111));
+	color: #000;
+	font-weight: bold;
+	line-height: 80px;
+}
+
+.main-nav li a:hover, .main-nav li a:focus {
+	border-bottom: 7px solid #000;
+}
+/*
+ * Full menu
+ * ----------
+ * Styles in this section are very
+ * important and you have to implement
+ * them if you want for your
+ * navigation to work properly.
+ *
+ */
+
+.full-menu {
+	visibility: hidden;
+	display: table;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
 	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
+	opacity: 0;
+	background-color: rgb(95, 218, 120);
+	  /*-webkit-transform: scale(0.85);
+	  -ms-transform: scale(0.85);
+	  transform: scale(0.85);*/
+	/*-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;*/
+	color: rgba(255, 255, 255, 0);
 }
 
-.social-columns div {
-	margin-left: 15%;
-	margin-right: 15%;
+.full-menu--open {
+	visibility: visible;
+	opacity: 1;
+	/*-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);*/
 }
 
-
-
-/* PROJECT PAGES */
-
-.project-title {
-	margin-top: 20px;
-	margin-bottom: 50px;
+.full-menu--transition {
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
-.small-text {
-	font-size: 0.83rem;
-	line-height: 1.4;
-	margin-top: 8px;
+.full-menu--middle {
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.project-body {
-	margin-bottom: 10px;
+.menu-toggle {
+	border: 0;
+	color: inherit;
+	margin-top: 30px;
+	margin-right: 30px;
+	font-size: 40px;
+	background-color: transparent;
 }
 
-.project-body p {
-	text-indent: 50px;
-	margin-bottom: 10px;
+.menu-toggle:before {
+	content: '\f0c9';
+	font-family: 'FontAwesome';
+	margin: 0 0px 0 0;
 }
 
-.project-column {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
+.menu-toggle--close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
-
-
-
-
-/* RESPONSIVE STUFF */
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-	
+.menu-toggle--close:before {
+	/*content: '\f00d';*/
+	content: '\f0c9';
+	color: #000;
+	font-size: 40px;
+	margin: 0;
 }
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-	
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-	
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-	.wrap {
-		flex-direction: column-reverse;
-	}
-	
-	.left {
-		/*height: auto;*/
-	}
-	
-	.right {
-		height: auto;
-	}
-	
-	.information {
-		position: absolute;
-		top: 50%;
-		left: 20%;
-		text-align: center;
-		background-color: rgba(0, 0, 0, 0.9);
-		color: rgb(255,117,0);
-		padding: 15px;
-		border-radius: 10px;
-		z-index: 10;
-	}
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-	.wrap {
-		flex-direction: column-reverse;
-	}
-	
-	.left {
-		/*height: auto;*/
-		overflow: visible;
-	}
-	
-	.right {
-		height: auto;
-	}
-	
-	.information {
-		position: absolute;
-		top: 50%;
-		left: 20%;
-		text-align: center;
-		background-color: rgba(0, 0, 0, 0.9);
-		color: rgb(255,117,0);
-		padding: 15px;
-		border-radius: 10px;
-		z-index: 10;
-		border: 1px black solid;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
