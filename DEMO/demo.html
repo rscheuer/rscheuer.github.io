@@ -1,0 +1,39 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </head>
+  <body>
+    <canvas id="canvas_AdapType"></canvas> 
+  </body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="https://bdiogo.github.io/AdapType/v0.1/opentype_modified.min.js"></script> 
+  <script type="text/javascript" src="https://bdiogo.github.io/AdapType/v0.1/AdapType.min.js"></script> 
+  <script> 
+    var stretch= new AdapType({ 
+        fonte1: "https://bdiogo.github.io/AdapType/fonts/Reglo/Reglo_condensed.ttf", 
+        fonte2: "https://bdiogo.github.io/AdapType/fonts/Reglo/Reglo_extended.ttf", 
+        textToRender: "SAUCE", 
+        fontSize : 122 , 
+        canvasID : "canvas_AdapType" , 
+        canvasWidth : 75 , 
+        mode : "random" , 
+        color : "#000000" , 
+        animateonEnter : true 
+    });
+    stretch.runAdapType();
+
+    $( window ).resize(function() {
+     stretch.changeCanvasWidthSetup();
+     stretch.windowResized();
+  });
+
+    //OPENING ANIMATE ON ENTER
+    $(document ).ready(function() {
+     if(stretch.getAnimate()===true){
+        var animate =setInterval(function(){
+           stretch.animate(40,animate , "increase");
+        }, 30);
+     }
+  });
+  </script> 
+</html>

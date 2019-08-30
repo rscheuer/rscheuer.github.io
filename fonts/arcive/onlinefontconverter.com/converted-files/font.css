@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HappyTimesattheIKOB-Regular';
+  src: url('HappyTimesattheIKOB-Regular.eot');
+  src: url('HappyTimesattheIKOB-Regular.eot?#iefix') format('embedded-opentype'),
+       url('HappyTimesattheIKOB-Regular.svg#HappyTimesattheIKOB-Regular') format('svg'),
+       url('HappyTimesattheIKOB-Regular.ttf') format('truetype'),
+       url('HappyTimesattheIKOB-Regular.woff') format('woff'),
+       url('HappyTimesattheIKOB-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

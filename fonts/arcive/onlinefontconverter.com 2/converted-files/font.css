@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Pressuru';
+  src: url('Pressuru.eot');
+  src: url('Pressuru.eot?#iefix') format('embedded-opentype'),
+       url('Pressuru.svg#Pressuru') format('svg'),
+       url('Pressuru.ttf') format('truetype'),
+       url('Pressuru.woff') format('woff'),
+       url('Pressuru.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
