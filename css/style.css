@@ -38,9 +38,10 @@ src: url("../fonts/Buffon-Bold.otf") format("opentype");
 }
 
 
-
-
-
+.link {
+	font-family: 'Ringside-Ultra';
+	color: black;
+}
 
 @font-face {
 font-family: "Ikob";
