@@ -322,6 +322,10 @@
 						// Line Height Slider
 						body.style.setProperty("line-height", ""+sliderValue/100.0+"em");
 						label.textContent += "%";
+					} else if (sliderID == "spacing") {
+						// Line Height Slider
+						body.style.setProperty("letter-spacing", ""+sliderValue/100.0+"em");
+						label.textContent += "%";	
 					} else {
 						// OTVar Slider: collect settings
 						if (settingtext != "") { settingtext += ", " };
@@ -396,6 +400,7 @@
 			<div class="labeldiv"><label class="sliderlabel" id="label_fontsize" name="Font Size">Font Size</label><input type="range" min="10" max="1000" value="150" class="slider" id="fontsize" oninput="updateSlider();"></div>
 			<div class="labeldiv"><label class="sliderlabel" id="label_lineheight" name="Line Height">Line Height</label><input type="range" min="30" max="300" value="100" class="slider" id="lineheight" oninput="updateSlider();"></div>
 			<div class='labeldiv'><label class='sliderlabel' id='label_wght' name='Weight'>Weight</label><input type='range' min='10' max='400' value='10' class='slider' id='wght' oninput='updateSlider();'></div>
+			<div class='labeldiv'><label class='sliderlabel' id='label_spacing' name='Spacing'>Spacing</label><input type='range' min='-20' max='20' value='0' class='slider' id='spacing' oninput='updateSlider();'></div>
 
 
 			<!-- OT features -->
