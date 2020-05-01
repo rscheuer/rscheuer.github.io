@@ -50,8 +50,49 @@
 	font: 150px "Rud Font";
 }
 
+#fs{
+	max-width:100%;
+}
+
+.title {
+	margin-bottom: 2px;
+	margin-left: -15px;
+	font-size: 25px;
+    display:inline-block;
+    -webkit-transform:scale(0.8,1); /* Safari and Chrome */
+    -moz-transform:scale(0.8,1); /* Firefox */
+    -ms-transform:scale(0.8,1); /* IE 9 */
+    -o-transform:scale(0.8,1); /* Opera */
+    transform:scale(0.8,1); /* W3C */
+    margin-block-start: 0em;
+    /*margin-block-end: 0em;*/
+    /*margin-inline-start: 0px;*/
+    /*margin-inline-end: 0px;*/
+}
 
 /* OTVar Sliders: */
+			.subcontainer{
+				width: 49.2%;
+				padding: 0 0 0 0.2%;
+				margin: auto;
+				display: inline-block;
+			}
+
+			.halfdiv{
+				min-width: 20%;
+				padding: 0 0 0 0.2%;
+				margin: auto;
+				display: inline-block;
+			}
+
+			.halfdiv2{
+				width:50%;
+				padding: 0 0 0 0.2%;
+				margin: auto;
+				display: inline-block;
+				margin-top: 4px;
+			}
+
 			.labeldiv {
 				width: 49.2%;
 				padding: 0 0 0 0.2%;
@@ -128,8 +169,8 @@
 				z-index: 6;
 			}
  			select {
-				position: absolute;
-				margin: 0.2em 0.5em;
+				/*position: absolute;*/
+				/*margin: 0.2em 0.5em;*/
 				height: 2.1em;
 				font: x-small sans-serif;
 				vertical-align: bottom;
@@ -384,23 +425,35 @@
 		});
 		</script>
 	</head>
-	<body onload="updateSlider();resetParagraph();document.getElementById('textarea').focus()">
+	<body onload="updateSlider();resetParagraph();document.getElementById('textarea').focus();toggleCenter()">
+	<p class="title">RS Type Font Lab&trade;</p> <div class="halfdiv">
+					<select id="fs"> 
+				        <option value="New Font">ESO</option>
+				        <option value="Rud Font">Rud </option>
+				        <option value="Raine Font">Raine </option>
+				        <option value="Comic Sans MS">Comic Sans MS</option>
+				    </select>
+				</div>
 	<div id="flexbox">
-		<!-- <p>TEST</p> -->
-		<select id="fs"> 
-		        <option value="New Font">ESO</option>
-		        <option value="Rud Font">Rud </option>
-		        <option value="Raine Font">Raine </option>
-		        <option value="Comic Sans MS">Comic Sans MS</option>
-		    </select>
-		    <br>
-		    <br>
 		<div id="controls">
 			<!-- OTVar Sliders -->
+			<!-- <div class="subcontainer">
+				<div class="halfdiv">
+					<select id="fs"> 
+				        <option value="New Font">ESO</option>
+				        <option value="Rud Font">Rud </option>
+				        <option value="Raine Font">Raine </option>
+				        <option value="Comic Sans MS">Comic Sans MS</option>
+				    </select>
+				</div>
+				<div class='halfdiv2'>
+					<label class='sliderlabel' id='label_spacing' name='Spacing'>Spacing</label><input type='range' min='-20' max='20' value='0' class='slider' id='spacing' oninput='updateSlider();'>
+				</div>
+			</div> -->
 			<div class="labeldiv"><label class="sliderlabel" id="label_fontsize" name="Font Size">Font Size</label><input type="range" min="10" max="1000" value="150" class="slider" id="fontsize" oninput="updateSlider();"></div>
 			<div class="labeldiv"><label class="sliderlabel" id="label_lineheight" name="Line Height">Line Height</label><input type="range" min="30" max="300" value="100" class="slider" id="lineheight" oninput="updateSlider();"></div>
 			<div class='labeldiv'><label class='sliderlabel' id='label_wght' name='Weight'>Weight</label><input type='range' min='10' max='400' value='10' class='slider' id='wght' oninput='updateSlider();'></div>
-			<div class='labeldiv'><label class='sliderlabel' id='label_spacing' name='Spacing'>Spacing</label><input type='range' min='-20' max='20' value='0' class='slider' id='spacing' oninput='updateSlider();'></div>
+			
 
 
 			<!-- OT features -->
