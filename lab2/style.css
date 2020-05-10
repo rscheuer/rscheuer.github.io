@@ -264,7 +264,7 @@ div{
 }
 
 #four:hover div{
-  font-size: 5rem;
+  /*font-size: 5rem;*/
  }
 
  #five, #five p{
@@ -273,7 +273,7 @@ div{
  }
 
  #five:hover div{
-   font-size: 8rem;
+   /*font-size: 8rem;*/
   }
 
   
@@ -284,7 +284,7 @@ div{
   }
 
   #six:hover div{
-    font-size: 8rem;
+    /*font-size: 8rem;*/
    }
 
 
