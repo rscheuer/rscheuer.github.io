@@ -1,0 +1,292 @@
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+/* #### SOURCE SANS VARIABLE ####
+Download it here:
+https://github.com/adobe-fonts/source-sans-pro/releases/tag/variable-fonts
+
+1 axis:
+"wght" 200 – 900  (Weight)
+*/
+
+@font-face {
+	font-family: "RS Auto";
+	src: url("./RSAutoGX.ttf")
+       format("truetype");
+}
+
+.source-sans-variable {
+  font-family: 'RS Auto', sans-serif;
+  font-variation-settings: "wght" 10;
+  font-size: 3rem;
+}
+
+.source-sans-variable:hover {
+  font-variation-settings: "wght" 300;
+}
+
+
+
+
+
+/* #### SOURCE SERIF VARIABLE ####
+Download it here:
+https://github.com/adobe-fonts/source-sans-pro/releases/tag/variable-fonts
+
+1 axis:
+"wght" 200 – 900  (Weight)
+*/
+
+@font-face {
+	font-family: "RS Cursed";
+	src: url("./RSCursedGX.ttf")
+       format("truetype");
+}
+
+.source-serif-variable {
+  font-family: 'RS Cursed', serif;
+  font-size: 3rem;
+  font-variation-settings: "wght" 100;
+}
+
+.source-serif-variable:hover {
+  font-variation-settings: "wght" 200;
+}
+
+
+
+
+
+/* #### VOTO SERIF GX ####
+Download it here:
+https://github.com/twardoch/varfonts-ofl/tree/master/VotoSerifGX-OFL
+
+3 axes:
+"wght" 28 – 194 (Weight)
+"wdth" 50 – 130 (Width)
+"opsz" 12 – 72  (Optical Size)
+*/
+
+@font-face {
+	font-family: "RS Faded";
+	src: url("./RUDGX.ttf")
+       format('truetype');
+}
+
+.voto-serif-gx {
+  font-family: 'RS Faded', serif;
+  font-variation-settings: "wght" 10;
+  font-size: 3rem;
+  text-transform: uppercase;
+ }
+
+.voto-serif-gx:hover {
+  font-variation-settings: "wght" 400;
+ }
+
+
+
+
+
+/* #### FF META VF ####
+Download it here:
+https://www.monotype.com/fonts/variable-fonts
+
+2 axes:
+"wght" 100 – 900  (Weight)
+"ital" 0 – 1      (Italic)
+*/
+
+@font-face {
+	font-family: "RS High Tide";
+	src: url("./RSHiTide-Rounded.otf")
+       format("opentype");
+}
+
+.ff-meta-vf {
+  font-family: 'RS High TIde', sans-serif;
+  font-size: 3rem;
+  font-variation-settings: "size" 400, "ital" 0;
+}
+
+.ff-meta-vf:hover {
+  font-size: 5rem;
+  font-variation-settings: "wght" 900, "ital" 1;
+}
+
+
+
+
+
+/* #### VENN VF ####
+Download it here:
+https://daltonmaag.com/library/venn
+
+"wght" 300 – 800  (Weight)
+"wdth" 75 – 125    (Width)
+*/
+
+@font-face {
+	font-family: "RS Biotin";
+	src: url("./Biotin-Regular.otf")
+       format("opentype");
+}
+
+.venn-vf {
+  font-family: 'RS Biotin', sans-serif;
+  font-size: 3rem;
+  font-variation-settings: "wght" 400, "wdth" 100;
+  text-transform: uppercase;
+}
+
+.venn-vf:hover {
+  font-size: 8rem;
+  font-variation-settings: "wght" 800, "wdth" 125;
+}
+
+
+
+
+
+/* #### ROSLINDALE ####
+This font can only be used for demo purposes. License it here:
+http://djr.com/roslindale/
+
+2 axes:
+"wght" 300 – 700 (Weight)
+"opsz" 12 – 48  (Optical Size)
+*/
+
+@font-face {
+	font-family: "RS Professor";
+	src: url("./RSProfessor-Regular.otf")
+       format('opentype');
+}
+
+.roslindale {
+  font-family: 'RS Professor', serif;
+  font-size: 6rem;
+  font-variation-settings: "wght" 300, "opsz" 12;
+ }
+
+.roslindale:hover {
+  font-size: 8rem;
+  font-variation-settings: "wght" 700, "opsz" 48;
+ }
+
+
+
+
+
+/* ####################################
+#### ONLY BASIC STYLING BELOW THIS ####
+####################################### */
+
+body{
+  margin:0px;
+  /*padding:8px;*/
+}
+
+
+
+div{
+  padding:8px;
+}
+
+.font-demo {
+  /*font-size: 3rem;*/
+  transition: all 0.5s ease-out;
+  text-shadow: 0 0 0 rgb(0,0,0); /* Hack for better displaying the font */
+}
+
+.info {
+  font-size: 1rem;
+  margin: 0.2rem 0 1rem;
+  padding-left: 0.25rem;
+  font-family: monospace;
+  color: #444;
+}
+
+.title {
+  font-size: 1rem;
+  /*margin: 0.2rem 0 1rem;*/
+  padding-left: 0.25rem;
+  font-family: monospace;
+  color: #444;
+}
+
+#zero{
+  position: fixed;
+  width:100%;
+  /*display: inline-block;*/
+}
+
+#zero, #zero p{
+  background-color: black;
+  color: white;
+}
+
+#one{
+  padding-top: 4em;
+}
+
+#one, #one p{
+  background-color: #E73021;
+  color: #ECE8D1;
+}
+
+#one:hover div{
+  font-variation-settings: "wght" 300;
+}
+
+#two{
+  background-color: #E2E2E0;
+}
+
+#two:hover div{
+  font-variation-settings: "wght" 200;
+}
+
+
+#three, #three p{
+  background-color: #0094DE;
+  color: #CBF2F8 !important;
+}
+
+#three:hover div{
+  font-variation-settings: "wght" 400;
+ }
+
+#four{
+  background-color: #C5FC77;
+  /*color: #000000;*/
+}
+
+#four:hover div{
+  font-size: 5rem;
+ }
+
+ #five, #five p{
+   background-color: #000;
+   color: #fff;
+ }
+
+ #five:hover div{
+   font-size: 8rem;
+  }
+
+  
+
+  #six, #six p{
+    background-color: #fff;
+    color: #7657BE;
+  }
+
+  #six:hover div{
+    font-size: 8rem;
+   }
+
+
+
+
