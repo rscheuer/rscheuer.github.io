@@ -15,7 +15,7 @@ body {
   display: inline-block;
   /*margin: 1em;*/
   margin: 5px;
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
   border: 0;
   border-radius: 30px;
   text-align: center;
@@ -23,7 +23,7 @@ body {
   cursor: pointer;
   font-family: 'Helvetica', sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   vertical-align: middle;
 }
 
