@@ -24,6 +24,11 @@
   src: url("../fonts/ITCGaramondStd-Lt.otf");
 }
 
+a{
+  /*color: #69b6d5;*/
+  color: #49B883;
+}
+
 
 @font-face {
 font-family: "Ikob";
