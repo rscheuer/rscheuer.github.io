@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'OPEN';
-  src: url(OPEN.ttf);
+  src: url(../OPEN.ttf);
 }
 html {
 	background-color: #080808 !important;
