@@ -15,9 +15,13 @@
   src: url(../fonts/texgyreheroscn-bold.otf);
 }
 
-@font-face {
+/*@font-face {
   font-family: "ITCG";
   src: url("../fonts/ITCGaramondStd-LtNarrow.otf");
+}*/
+@font-face {
+  font-family: "ITCG";
+  src: url("../fonts/ITCGaramondStd-Lt.otf");
 }
 
 
@@ -55,30 +59,19 @@ p {
 }
 
 .title-main {
-	/*font-family:"Arial Narrow";*/
 	font-family:"TeXR";
-	font-size: 13px;
+	font-size: 14px;
 	color: black;
+}
+
+.padding {
 	padding-bottom: 1.5rem;
 }
 
 .bold {
 	font-family:"TeXB";
-	font-size: 13px;
-	color: black;
 }
 
-.arial {
-	font-family:"TeXR";
-	font-size: 13px;
-	color: black;
-}
-
-.title-regular {
-	font-family:"Arial Narrow";
-	font-size: 13px;
-	color: black;
-}
 
 .column-section {
 	padding-bottom: 1.5rem;
