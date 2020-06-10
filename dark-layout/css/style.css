@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'OPEN';
+  src: url(OPEN.ttf);
+}
+html {
+	background-color: #080808 !important;
+}
+
+body {
+	background-color: #080808;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  /*margin: 1em;*/
+  margin: 5px;
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.btn--danger {
+  background-color: #e9e9e7;
+  color: #080808;
+}
+
+.btn--ghost {
+  background-color: transparent;
+  /*border: 1px solid #739600;*/
+  color: #e9e9e7;
+  font-family: "OPEN";
+}
+
+.main-text {
+	font-family: "o24";
+	color: #e9e9e7;
+	font-size: 20px;
+}
+
+.column-item {
+	margin-bottom: 1rem;
+	/*display: table-cell;*/
+	/*vertical-align: bottom;*/
+}
+
+.spacer {
+	padding-bottom: 3em;
+}
+
+.btn--multi {
+	font-size: 13px;
+	line-height: 12px;
+	/*vertical-align: middle;*/
+}
+
+.hand-img {
+	max-width: 100px;
+}
+
+.blank {
+	color: #e9e9e7;
+}
+
+.hex {
+	margin-top: -29px;
+	width: 150px;
+}
+
+.filter-green{
+        filter: invert(70%) brightness(118%) contrast(119%);
+    }

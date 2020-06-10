@@ -1,0 +1,107 @@
+$sans: 'Open Sans', sans-serif;
+.transition { transition: all 0.25s ease-in-out; }
+$black: #666;
+$link: #0054a6;
+
+body {
+  font-family: $sans;
+  padding: 80px;
+  font-size: 14px;
+  color: $black;
+  background-color: #e6e6e6;
+}
+
+a { color: $link; }
+p { line-height: 2em; }
+
+.tooltip { 
+    position: relative;
+    //display: inline-block; // for Firefox
+    text-decoration: none;
+    border-bottom: 1px dashed;
+
+    // the text area
+    [class*="tooltip-"] {
+        @extend .transition;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        width: 200px;
+        padding: 10px;
+        border-radius: 3px;
+        background: #1a1a1a;
+        color: white;
+
+        // the css triangle
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: 10px; // set some border style here to avoid repetition below
+            border-style: solid;
+        }
+    }
+
+    // visible on hover
+    &:hover {
+      cursor: pointer;
+        [class*="tooltip-"] {
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+
+    // Tooltip to top of element
+    .tooltip-top {
+        bottom: 100%;
+        left: 50%;
+        margin: 0 0 15px -100px;
+
+        &:before {
+            top: 100%; left: 50%;
+            margin-left: -10px;
+            border-color: #1a1a1a transparent transparent transparent;
+        }
+    }
+
+    // Tooltip to right of element
+    .tooltip-right {
+        top: 100%;
+        left: 100%;
+        margin: -40px 0 0 15px;
+
+        &:before {
+            right: 100%;
+            margin-top: 10px;
+            border-color: transparent #1a1a1a transparent transparent;
+        }
+    }
+
+    // Tooltip to bottom of element
+    .tooltip-bottom {
+        top: 100%;
+        left: 50%;
+        margin: 15px 0 0 -100px;
+
+        &:before {
+            bottom: 100%; left: 50%;
+            margin-left: -10px;
+            border-color: transparent transparent #1a1a1a transparent;
+        }
+    }
+
+    // Tooltip to left of element
+    .tooltip-left {
+        top: 100%;
+        right: 100%;
+        margin: -40px 15px 0 0;
+
+        &:before {
+            left: 100%;
+            margin-top: 10px;
+            border-color: transparent transparent transparent #1a1a1a;
+        }
+    }
+}
