@@ -16,6 +16,12 @@
 }
 
 @font-face {
+  font-family: "ITCG";
+  src: url("../fonts/ITCGaramondStd-LtNarrow.otf");
+}
+
+
+@font-face {
 font-family: "Ikob";
 src: url("../fonts/happy-times-at-the-ikob.otf") format("opentype");
 }
@@ -38,7 +44,8 @@ src: url("../fonts/happy-times-at-the-ikob.otf") format("opentype");
 }
 
 p {
-	font-family: "IKOB";
+	/*font-family: "IKOB";*/
+	font-family: "ITCG";
 	font-size: 14px;
 	color: black;
 }
@@ -57,6 +64,8 @@ p {
 
 .bold {
 	font-family:"TeXB";
+	font-size: 13px;
+	color: black;
 }
 
 .arial {
