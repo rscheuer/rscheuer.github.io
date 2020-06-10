@@ -176,7 +176,255 @@ http://djr.com/roslindale/
  }
 
 
+/* DEMO CONTROLS */
+.demo-box {
+	height: 10rem;
+  /*transition: all 0.5s ease-out;*/
+}
 
+
+
+.controls{
+  /*display: none;*/
+}
+
+#flexbox {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+#controls {
+  flex: 0 1 auto;
+  background-color: transparent;
+  margin: 2px 0 0 0;
+  padding: 0;
+  width: 100%;
+  border: 0px solid transparent;
+  height: auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.labeldiv {
+  width: 49.2%;
+  padding: 0 0 0 0.2%;
+  margin: auto;
+  display: inline-block;
+}
+
+label {
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+  height: 2em;
+  margin: 0;
+  padding: 0.5em 1em;
+  vertical-align: text-top;
+  font: x-small sans-serif;
+  color: black;
+  opacity: 0.5;
+}
+
+.slider {
+  z-index: 1;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2em;
+  border-radius: 5px;
+  /*background: #ece8d194;*/
+  background: rgba(235, 231, 255, 0);
+  padding: auto;
+  margin: auto;
+}
+
+.slider::-webkit-slider-thumb {
+  z-index: 3;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 2em;
+  border-radius: 5px;
+  background: #777;
+  cursor: auto;
+}
+
+
+/* NEW RANGE */
+input[type=range] {
+	-webkit-appearance: none;
+	margin: 20px 0;
+	width: 100%;
+}
+input[type=range]:focus {
+	outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: #ECE8D1;
+	border-radius: 25px;
+}
+input[type=range]::-webkit-slider-thumb {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #ECE8D1;
+	/*box-shadow: 0 0 4px 0 rgba(0,0,0, 1);*/
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #ECE8D1;
+}
+.range-wrap{
+	width: 500px;
+	position: relative;
+}
+.range-value{
+	position: absolute;
+	top: -50%;
+}
+.range-value span{
+	width: 30px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background: #ECE8D1;
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	border-radius: 6px;
+}
+.range-value span:before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #03a9f4;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	margin-top: -1px;
+}
+/* END NEW SLIDER */
+
+/* Feature Buttons: */
+
+#featureControls {
+  font-size: x-small;
+  font-family: sans-serif;
+  padding: 0 0.2%;
+}
+
+#featureControls .emojiButton {
+  vertical-align: -50%;
+  font-size: small;
+}
+
+.emojiButton {
+  cursor: pointer;
+}
+
+.otFeatureLabel, .otFeature {
+  font-size: small;
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+.otFeatureLabel, select {
+  padding: 0.2em 0.5em 0.3em 0.5em;
+  margin: 0 .04em;
+  line-height: 2em;
+  color: #666;
+  background-color: #ddd;
+  border-radius: 0.3em;
+  border: 0;
+  text-align: center;
+  z-index: 6;
+}
+
+select {
+  /*position: absolute;*/
+  /*margin: 0.2em 0.5em;*/
+  height: 2.1em;
+  font: x-small sans-serif;
+  vertical-align: bottom;
+}
+
+.otFeature {
+  visibility: collapse;
+  margin: 0 -1em 0 0;
+}
+
+input[type=checkbox]:checked + label {
+  visibility: visible;
+  color: #eee;
+  background-color: #555;
+  position: relative;
+}
+
+.otFeatureLabel .tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0px 5px;
+  top: -2em;
+  left: 0;
+  position: absolute;
+  z-index: 8;
+}
+
+.otFeatureLabel:hover .tooltip {
+  visibility: visible;
+}
+
+.dropdown-button {
+  display: block;
+  margin: 0 right;
+  width: 200px;
+  height: 40px;
+  background: #ff725d;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.dropdown-button span {
+  z-index: 0;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+  background: white;
+  height: 7px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.small{
+  width:100px;
+}
 
 
 /* ####################################
@@ -192,7 +440,14 @@ body{
 
 div{
   padding:8px;
+/*  -webkit-transition: -webkit-transform 1s ease-in;
+     -moz-transition: -moz-transform 1s ease-in;
+      -ms-transition: -ms-transform 1s ease-in;
+          transition: transform 1s ease-in;*/
+
 }
+
+
 
 .font-demo {
   /*font-size: 3rem;*/

@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: Ringside-Medium;
+  src: url(../fonts/Ringside-Medium.otf);
+}
+
+
+@font-face {
+  font-family: "TeXR";
+  src: url(../fonts/texgyreheroscn-regular.otf);
+}
+
+@font-face {
+font-family: "Ikob";
+src: url("../fonts/happy-times-at-the-ikob.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Pressuru';
+  src: url('Pressuru.eot');
+  src: url('Pressuru.eot?#iefix') format('embedded-opentype'),
+       url('Pressuru.svg#Pressuru') format('svg'),
+       url('Pressuru.ttf') format('truetype'),
+       url('Pressuru.woff') format('woff'),
+       url('Pressuru.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.mySection {
+	padding: padding: 3rem 1.5rem !important;
+}
+
+p {
+	font-family: "IKOB";
+	font-size: 14px;
+	color: black;
+}
+
+.image {
+	padding-bottom: 1.25rem;
+}
+
+.title-main {
+	font-family:"Arial Narrow";
+	font-size: 13px;
+	color: black;
+	padding-bottom: 1.5rem;
+}
+
+.arial {
+	font-family:"TeXR";
+	font-size: 13px;
+	color: black;
+}
+
+.title-regular {
+	font-family:"Arial Narrow";
+	font-size: 13px;
+	color: black;
+}
+
+.column-section {
+	padding-bottom: 1.5rem;
+}
+
+.press {
+	font-family: "Pressuru";
+	font-size: 13px;
+}
+
