@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: "TeXB";
+  src: url(../fonts/texgyreheroscn-bold.otf);
+}
+
+@font-face {
 font-family: "Ikob";
 src: url("../fonts/happy-times-at-the-ikob.otf") format("opentype");
 }
@@ -43,10 +48,15 @@ p {
 }
 
 .title-main {
-	font-family:"Arial Narrow";
+	/*font-family:"Arial Narrow";*/
+	font-family:"TeXR";
 	font-size: 13px;
 	color: black;
 	padding-bottom: 1.5rem;
+}
+
+.bold {
+	font-family:"TeXB";
 }
 
 .arial {
