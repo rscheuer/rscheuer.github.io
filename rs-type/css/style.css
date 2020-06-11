@@ -127,6 +127,7 @@ p.red::after{
   flex-grow: 1;
 }
 
+
 .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: transparent; 
  }
