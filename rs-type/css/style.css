@@ -59,6 +59,11 @@ p {
 	color: black;
 }
 
+.no-grow{
+  flex-grow: 0 !important;
+}
+
+
 .image {
 	padding-bottom: 1.25rem;
 }
@@ -116,3 +121,33 @@ p.red::after{
    vertical-align: middle;
    margin-bottom:2px;
 }
+
+/* BULMA OVERRIDES */
+.navbar-item {
+  flex-grow: 1;
+}
+
+.navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: transparent; 
+ }
+ 
+ a.navbar-item:hover, a.navbar-item.is-active,
+ .navbar-link:hover,
+ .navbar-link.is-active {
+   background-color: #fafafa;
+   color: inherit;
+ }
+ /*
+ .navbar-dropdown {
+     background-color: white;
+     border-bottom-left-radius: 6px; 
+     border-top: 0px solid #dbdbdb;
+     box-shadow: 0 0px 0px rgba(10, 10, 10, 0.1);
+     font-size: 0.875rem;
+     left: 0;
+     min-width: 100%;
+     position: absolute;
+     top: 100%;
+     z-index: 20;
+   }*/
+
