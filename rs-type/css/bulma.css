@@ -6837,7 +6837,8 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: #3273dc;
+  /*border-color: #3273dc;*/
+  border-color: black;
   margin-top: -0.375em;
   right: 1.125em;
 }
