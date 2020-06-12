@@ -210,24 +210,29 @@
 	
 	<script>
 		$(document).ready(function() {
-	
-	  // Check for click events on the navbar burger icon
-	  $(".navbar-burger").click(function() {
-	
-	      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-	      $(".navbar-item").toggleClass("is-active");
-		$(".navbar-menu").toggleClass("is-active");
-	});
-	
-	// Check for click events on the navbar burger icon
-	  $(".navbar-item").click(function() {
-	
-	      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-	      $(".navbar-item").toggleClass("is-active");
-		// $(".navbar-menu").toggleClass("is-active");
-	});
-	
-});
+			// Check for click events on the navbar burger icon
+			$(".navbar-burger").click(function() {
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				$(".navbar-item").toggleClass("is-active");
+				$(".navbar-menu").toggleClass("is-active");
+			});
+			// Check for click events on the navbar burger icon
+			$(".navbar-item").click(function() {
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				$(".navbar-item").toggleClass("is-active");
+				// $(".navbar-menu").toggleClass("is-active");
+			});
+			//menu clicking
+			$('html').click(function() {
+				//Hide the menus if visible
+				$(".navbar-item").toggleClass("is-active");
+				// $(".navbar-menu").toggleClass("is-active");
+			});
+
+			$(".navbar").click(function(event){
+			    event.stopPropagation();
+			});
+		});
 	</script>
 
 	
