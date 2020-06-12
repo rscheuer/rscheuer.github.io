@@ -1,6 +1,6 @@
 
 @font-face {
-font-family: "RS Auto";
+font-family: "RSAuto";
 src: url("RSAutoGX.ttf");
 }
 
@@ -32,17 +32,17 @@ body {
 /* CUSTOM FONTS*/
 
 @font-face {
-font-family: "Rud Font";
+font-family: "RudFont";
 src: url("RUDGX.ttf");
 }
 
 @font-face {
-font-family: "Raine Font";
+font-family: "RaineFont";
 src: url("RSRaineGX.ttf");
 }
 
 @font-face {
-font-family: "Biotin Font";
+font-family: "BiotinFont";
 src: url("Biotin-Regular.otf");
 }
 
@@ -57,22 +57,22 @@ src: url("RSHiTide-Rounded.otf");
 }
 
 @font-face {
-font-family: "RS Professor";
+font-family: "RSProfessor";
 src: url("RSProfessor-Regular.otf");
 }
 
 @font-face {
-font-family: "RS Cursed";
+font-family: "RSCursed";
 src: url("RSCursedGX.ttf");
 }
 
 @font-face {
-font-family: "RS Softcore";
+font-family: "RSSoftcore";
 src: url("RSSoftcore-SPIKE.otf");
 }
 
 .myStyle {
-	font: 150px "Rud Font";
+	font: 150px "RudFont";
 }
 
 #fs {

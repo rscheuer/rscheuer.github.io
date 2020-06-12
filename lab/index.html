@@ -149,15 +149,15 @@
 	<body onload="updateSlider();resetParagraph();document.getElementById('textarea').focus();toggleCenter()">
 	<p class="title">RS Type Font Lab&trade;</p> <div class="halfdiv">
 					<select id="fs"> 
-				        <option value="RS Auto">RS Auto [GX]</option>
-				        <option value="Rud Font">RS IDK [GX]</option>
-				        <option value="Raine Font">RS Raine</option>
-				        <option value="Biotin Font">RS Biotin</option>
+				        <option value="RSAuto">RS Auto [GX]</option>
+				        <option value="RudFont">RS IDK [GX]</option>
+				        <option value="RaineFont">RS Raine</option>
+				        <option value="BiotinFont">RS Biotin</option>
 				        <!-- <option value="HiTideR">HiTide R </option> -->
 				        <option value="HiTideS">RS High Tide</option>
-				        <option value="RS Professor">RS Professor</option>
-				        <option value="RS Cursed">RS Cursed [GX]</option>
-				        <option value="RS Softcore">RS Softcore</option>
+				        <option value="RSProfessor">RS Professor</option>
+				        <option value="RSCursed">RS Cursed [GX]</option>
+				        <option value="RSSoftcore">RS Softcore</option>
 				    </select>
 				</div>
 	<div id="flexbox">
@@ -210,4 +210,24 @@
 		Ctrl-R: Reset Charset. Ctrl-L: Latin1. Ctrl-J: LTR/RTL. Ctrl-C: Center. Ctrl-X: X-Ray. Not working? Please try in a newer macOS or use the <a href="https://www.google.com/chrome/">latest Chrome</a>. Pull mouse across this note to make it disappear. <b>Some fonts may be incomplete –– test with capital letters first.</b>
 	</p>
 	</body>
+
+	<script type="text/javascript">
+		function getQueryVariable(variable)
+		{
+		       var query = window.location.search.substring(1);
+		       var vars = query.split("&");
+		       for (var i=0;i<vars.length;i++) {
+		               var pair = vars[i].split("=");
+		               if(pair[0] == variable){return pair[1];}
+		       }
+		       return(false);
+		}
+
+		selectElement('fs', getQueryVariable(fontName))
+
+		function selectElement(id, valueToSelect) {    
+		    let element = document.getElementById(id);
+		    element.value = valueToSelect;
+		}
+	</script>
 </html>
