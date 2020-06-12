@@ -149,7 +149,7 @@
 	<body onload="updateSlider();resetParagraph();document.getElementById('textarea').focus();toggleCenter()">
 	<p class="title">RS Type Font Lab&trade;</p> <div class="halfdiv">
 					<select id="fs"> 
-				        <option value="RSAuto">RS Auto [GX]</option>
+				        <option selected="selected" value="RSAuto">RS Auto [GX]</option>
 				        <option value="RudFont">RS IDK [GX]</option>
 				        <option value="RaineFont">RS Raine</option>
 				        <option value="BiotinFont">RS Biotin</option>
@@ -212,6 +212,7 @@
 	</body>
 
 	<script type="text/javascript">
+		//get info from URL
 		function getQueryVariable(variable)
 		{
 		       var query = window.location.search.substring(1);
@@ -223,11 +224,25 @@
 		       return(false);
 		}
 
-		selectElement('fs', getQueryVariable("fontName"));
+		//select font from dropdown
+		// selectElement('fs', getQueryVariable("fontName"));
 
-		function selectElement(id, valueToSelect) {    
-		    let element = document.getElementById(id);
-		    element.value = valueToSelect;
+		function selectElement(id, valueToSelect) {
+			console.log(valueToSelect);
+			if (valueToSelect == false) {
+				// return null;
+				$('#textarea').css("font-family", "RSAuto");
+			} 
+			else{
+				let element = document.getElementById(id);
+				element.value = valueToSelect;
+				$('#textarea').css("font-family", valueToSelect);
+			}   
+		    
 		}
+
+		$(document).ready(function(){
+		  selectElement('fs', getQueryVariable("fontName"));
+		});
 	</script>
 </html>
