@@ -193,3 +193,162 @@ body:not(.mobile) .hover-title:hover + .hover-image {
     height: auto !important;
     margin-bottom: 0;
 }
+
+
+/* PEACE PAGE */
+
+.typeface {
+	color: red;
+	padding-top: 1.5rem;
+	font-family: 'TexR';
+	font-size: 5rem;
+}
+
+.biotin {
+	font-family: 'Biotin';
+	font-size: 6rem;
+}
+
+
+@font-face {
+  font-family: "Biotin";
+  src: url("../peace/peace-fonts/Biotin-Regular.otf");
+}
+
+.auto {
+	font-family: 'Auto';
+	font-size: 6rem;
+}
+
+@font-face {
+  font-family: "Auto";
+  src: url("../peace/peace-fonts/RSAutoGX.ttf");
+}
+
+.cursed {
+	font-family: 'Cursed';
+	font-size: 6rem;
+}
+
+@font-face {
+  font-family: "Cursed";
+  src: url("../peace/peace-fonts/RSCursedGX.ttf");
+}
+
+.hightide {
+	font-family: 'HighTide';
+	font-size: 6rem;
+}
+
+@font-face {
+  font-family: "HighTide";
+  src: url("../peace/peace-fonts/RSHiTide-Rounded.otf");
+}
+
+.professor {
+	font-family: 'Professor';
+	font-size: 10rem;
+}
+
+@font-face {
+  font-family: "Professor";
+  src: url("../peace/peace-fonts/RSProfessor-Regular.otf");
+}
+
+.raine {
+	font-family: 'Raine';
+	font-size: 4rem;
+}
+
+@font-face {
+  font-family: "Raine";
+  src: url("../peace/peace-fonts/RSRaineGX.ttf");
+}
+
+.softcore {
+	font-family: 'Softcore';
+	font-size: 4rem;
+}
+
+@font-face {
+  font-family: "Softcore";
+  src: url("../peace/peace-fonts/RSSoftcore-Regular");
+}
+
+
+/* Make it move */
+
+#cloud1 {
+  /*background-image: url("../img/body.png");*/
+  width: 100vw;
+  /*height: 40vh;*/
+  position: fixed;
+  top: 0;
+  /*height: 50px;*/
+}
+
+#cloud2 {
+	width: 100%;
+	position: fixed;
+	bottom: -200px;
+}
+
+.marquee {
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-animation: marquee 50s linear infinite;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee-reverse {
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-animation: marqueeR 50s linear infinite;
+  animation: marqueeR 50s linear infinite;
+}
+
+
+@-webkit-keyframes marquee {
+  from {
+    left: -100%
+  }
+  to {
+    left: 100%
+  }
+}
+
+@keyframes marquee {
+  from {
+    left: -100%
+  }
+  to {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes marqueeR {
+  from {
+    right: -100%
+  }
+  to {
+    right: 100%
+  }
+}
+
+@keyframes marqueeR {
+  from {
+    right: -100%
+  }
+  to {
+    right: 100%
+  }
+}
+
+
+
+
+
+
+
+
+
