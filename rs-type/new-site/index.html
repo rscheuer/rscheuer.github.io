@@ -13,6 +13,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel='stylesheet' href='./css/bulma.css'>
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 	
 	<link rel='stylesheet' href='./css/style-new.css'>
 	
@@ -120,7 +121,7 @@
 	                		  <footer class="card-footer">
 	                		    <div class="price-button">$10</div>
 	                		    <a href="#" class="card-footer-item">Try</a>
-	                		    <a href="#" class="card-footer-item">Buy</a>
+	                		    <a class="card-footer-item modal-button" data-target="modal-gremlin">Buy</a>
 	                		  </footer>
 	                		</div>
 	                	</div>
@@ -148,6 +149,29 @@
 	        </div>
 
 	</section>
+	
+	
+	<!-- related modal with fx class "modal-fx-fadeInScale" -->
+	<div id="modal-gremlin" class="modal modal-large modal-fx-fadeInScale">
+	    <div class="modal-background"></div>
+	    <div class="modal-content modal-card">
+	        <header class="modal-card-head">
+	            <p class="modal-card-title">Purchase RS Gremlin!</p>
+	            <button class="modal-button-close delete" aria-label="close"></button>
+	        </header>
+	        <section class="modal-card-body">
+	        	<div class="gumroad-product-embed" data-gumroad-product-id="zgLZO"><a href="https://gumroad.com/l/zgLZO">Loading...</a></div>
+	        </section>
+	        <footer class="modal-card-foot">
+	            <!--<button class="modal-button-close button is-success">Save changes</button>-->
+	            <button class="modal-button-close button">Done</button>
+	        </footer>
+	    </div>
+	</div>
+	
+	<script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+	<script src="https://gumroad.com/js/gumroad-embed.js"></script>
+	
 </body>
 </html>
 
