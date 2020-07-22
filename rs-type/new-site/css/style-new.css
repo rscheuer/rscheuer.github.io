@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "TeXR";
+  src: url(../fonts-new/texgyreheroscn-regular.otf);
+}
+
+body {
+	background-color: #F6F6F6;
+	
+}
+
+.title-main {
+	font-family:"TeXR";
+	font-size: 80px;
+	color: black;
+}
+
+.title-main-sub {
+	font-family:"TeXR";
+	font-size: 40px;
+	color: black;
+}
+
+.right-just {
+	text-align: right;
+}
+
+.blue-bg {
+	background-color: #0091FF;
+}
+
+.card {
+	border-radius: 4px;
+	margin: 20px;
+}
+
+.card-header {
+	box-shadow: none;
+}
+
+.card-footer {
+	border-top: none;
+}
+
+.card-footer-item {
+	border-right: none !important;
+}
+
+.card-header-title {
+	font-family:"TeXR";
+	font-weight: 200;
+}
+
+.arrow-down {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	font-size: 50px;
+	opacity: 0.3;
+}
+
+.hero {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: -50px;
+}
+
+.price-button {
+	font-family: "TeXR";
+	background-color: #FFD556;
+	padding-left: 14px !important;
+	padding-right: 14px !important;
+	padding-bottom: 14px !important;
+	padding-top: 16px;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	position: absolute;
+	bottom: -18px;
+	right: -28px;
+	border-radius: 80px;
+}

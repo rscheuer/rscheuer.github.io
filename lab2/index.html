@@ -16,9 +16,9 @@
 		<p class="title">RS Type Font Lab v2</p>
 	</div>
 	<div id="one" class="">
-		<div class="controls">
+		<!-- <div class="controls">
 			<div id="controls">
-				<!-- OTVar Sliders -->
+				
 				
 				<div class="labeldiv"><label class="sliderlabel" id="label_fontsize" name="Font Size">Font Size</label><input type="range" min="10" max="1000" value="150" class="slider" id="fontsize" oninput="updateSlider();"></div>
 				<div class="labeldiv"><label class="sliderlabel" id="label_lineheight" name="Line Height">Line Height</label><input type="range" min="30" max="300" value="100" class="slider" id="lineheight" oninput="updateSlider();"></div>
@@ -29,7 +29,7 @@
 				
 
 
-				<!-- OT features -->
+				
 				<div id="featureControls">
 					<a onclick="toggleInverse();" id="invert" class="emojiButton">🔲</a>
 					<input type="checkbox" name="kern" id="kern" value="kern" class="otFeature" onchange="updateFeatures()" checked><label for="kern" class="otFeatureLabel">kern</label>
@@ -43,15 +43,22 @@
 
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!--<a class="dropdown-button"><span></span></a>-->
 		<div contenteditable="true" spellcheck="false" id="textarea" class="font-demo source-sans-variable">RS Auto</div>
-		<p class="info">RS Auto</p>
+		
+		<p class="info" style="display:inline">RS Auto</p>
+		<div class="controls">
+		<div class='labeldiv'><label class='sliderlabel' id='label_wght' name='Weight'>Weight</label><input type='range' min='10' max='400' value='10' class='slider' id='wght' oninput='updateSlider();'></div>
+		</div>
 	</div>
 
 	<div id="two" class="">
 		<div contenteditable="true" class="font-demo source-serif-variable">RS Cursed</div>
-		<p class="info">RS Cursed</p>
+		<p style="display:inline" class="info">RS Cursed</p>
+		<!-- <div class="controls">
+		<div class='labeldiv'><label class='sliderlabel' id='label_wght' name='Weight'>Weight</label><input type='range' min='10' max='400' value='10' class='slider' id='wght' oninput='updateSlider();'></div>
+		</div> -->
 	</div>
 
 	<div id="three" class="">

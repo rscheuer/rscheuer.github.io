@@ -19,15 +19,15 @@
 
 $(document).ready(function() {
 	
-	$('.controls').hide();
+	// $('.controls').hide();
 	
-	$("#one").click(function(event){
-//		  event.stopPropagation();
-//		  alert("This is : one" + $(this).attr('class'));
-		  $('#one .controls').toggle();
-		  // Comment the following to see the difference
+// 	$("#one").click(function(event){
+// //		  event.stopPropagation();
+// //		  alert("This is : one" + $(this).attr('class'));
+// 		  $('#one .controls').toggle();
+// 		  // Comment the following to see the difference
 		  
-	});
+// 	});
 	
 	$(".controls").click(function(event){
 	    event.stopPropagation();
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	
-	$('.controls').hide();
+	// $('.controls').hide();
 	
 	$("#two").click(function(event){
 		$('two').

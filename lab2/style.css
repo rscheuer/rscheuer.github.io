@@ -111,7 +111,7 @@ https://www.monotype.com/fonts/variable-fonts
 }
 
 .ff-meta-vf:hover {
-  font-size: 5rem;
+  /*font-size: 5rem;*/
   font-variation-settings: "wght" 900, "ital" 1;
 }
 
@@ -141,7 +141,7 @@ https://daltonmaag.com/library/venn
 }
 
 .venn-vf:hover {
-  font-size: 8rem;
+  /*font-size: 8rem;*/
   font-variation-settings: "wght" 800, "wdth" 125;
 }
 
@@ -185,7 +185,7 @@ http://djr.com/roslindale/
 
 
 .controls{
-  /*display: none;*/
+  display: inline;
 }
 
 #flexbox {
@@ -207,9 +207,10 @@ http://djr.com/roslindale/
   -webkit-user-select: none;
 }
 .labeldiv {
-  width: 49.2%;
-  padding: 0 0 0 0.2%;
-  margin: auto;
+  /*width: 49.2%;*/
+  /*padding: 0 0 0 0.2%;*/
+  /*margin: auto;*/
+  padding-bottom: -10px !important;
   display: inline-block;
 }
 
@@ -218,7 +219,7 @@ label {
   position: absolute;
   pointer-events: none;
   height: 2em;
-  margin: 0;
+  margin: -9px;
   padding: 0.5em 1em;
   vertical-align: text-top;
   font: x-small sans-serif;
@@ -233,7 +234,7 @@ label {
   -moz-appearance: none;
   appearance: none;
   width: 100%;
-  height: 2em;
+  /*height: 2em;*/
   border-radius: 5px;
   /*background: #ece8d194;*/
   background: rgba(235, 231, 255, 0);
@@ -451,7 +452,7 @@ div{
 
 .font-demo {
   /*font-size: 3rem;*/
-  transition: all 0.5s ease-out;
+  transition: all 0.0s ease-out;
   text-shadow: 0 0 0 rgb(0,0,0); /* Hack for better displaying the font */
 }
 
