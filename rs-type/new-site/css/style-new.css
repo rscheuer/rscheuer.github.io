@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TeXR";
-  src: url(../fonts-new/texgyreheroscn-regular.otf);
+  src: url(../fonts-new/texgyreheros-regular.otf);
 }
 
 body {
@@ -20,12 +20,21 @@ body {
 	color: black;
 }
 
+a {
+	font-family:"TeXR";
+}
+
 .right-just {
 	text-align: right;
+	font-size: 50px;
 }
 
 .blue-bg {
 	background-color: #0091FF;
+}
+
+.green-bg {
+	background-color: #589f30;
 }
 
 .card {
@@ -55,8 +64,14 @@ body {
 	bottom: 30px;
 	left: 30px;
 	font-size: 50px;
-	opacity: 0.3;
+	opacity: 0.9;
 }
+
+
+.arrow-img {
+	width: 50px;
+}
+
 
 .hero {
 	padding-left: 10px;
@@ -80,4 +95,6 @@ body {
 	bottom: -18px;
 	right: -28px;
 	border-radius: 80px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+	opacity: 1;
 }
