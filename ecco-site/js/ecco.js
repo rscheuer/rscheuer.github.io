@@ -12,7 +12,7 @@ var $newdiv1 = $( `<nav class="navbar is-fixed-top" role="navigation" aria-label
 		    
 
 		      <div class="navbar-item has-dropdown"><a class="navbar-link is-arrowless">
-                <h2 class="title-main bold"><a href=".." >Spiritual Engineering</a></h2>
+                <h2 class="title-main bold"><a href=".." >SPIRITUAL ENGINEERING</a></h2>
               </a>
 				
 				<div class="navbar-dropdown">
