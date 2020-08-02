@@ -1,0 +1,409 @@
+
+@font-face {
+  font-family: Ringside-Medium;
+  src: url(../fonts/Ringside-Medium.otf);
+}
+
+
+@font-face {
+  font-family: "TeXR";
+  src: url(../fonts/texgyreheroscn-regular.otf);
+}
+
+@font-face {
+  font-family: "TeXB";
+  src: url(../fonts/texgyreheroscn-bold.otf);
+}
+
+/*@font-face {
+  font-family: "ITCG";
+  src: url("../fonts/ITCGaramondStd-LtNarrow.otf");
+}*/
+@font-face {
+  font-family: "ITCG";
+  src: url("../fonts/ITCGaramondStd-Lt.otf");
+}
+
+a{
+  /*color: #69b6d5;*/
+  color: #49B883;
+}
+
+
+@font-face {
+font-family: "Ikob";
+src: url("../fonts/happy-times-at-the-ikob.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Pressuru';
+  src: url('Pressuru.eot');
+  src: url('Pressuru.eot?#iefix') format('embedded-opentype'),
+       url('Pressuru.svg#Pressuru') format('svg'),
+       url('Pressuru.ttf') format('truetype'),
+       url('Pressuru.woff') format('woff'),
+       url('Pressuru.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.mySection {
+	padding: padding: 3rem 1.5rem !important;
+}
+
+.title-lg {
+	font-family:"TeXR";
+	font-size: 80px;
+	color: black;
+}
+
+.article-title {
+	font-size: 80px;
+	font-family:"TeXR";
+	margin-bottom: 15px;
+}
+
+.title-main-sub {
+	font-family:"TeXR";
+	font-size: 40px;
+	color: black;
+}
+
+.arrow-down {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	font-size: 50px;
+	opacity: 0.9;
+}
+
+
+.arrow-img {
+	width: 50px;
+}
+
+.blue-bg {
+	background-color: #0091FF;
+}
+
+.black-bg {
+	background-color: #f5f5f5;
+}
+
+.green-bg {
+	background-color: #589f30;
+}
+
+
+a {
+	font-family:"TeXR";
+}
+
+.right-just {
+	text-align: right;
+	font-size: 50px !important;
+}
+
+
+p {
+	/*font-family: "IKOB";*/
+	font-family: "ITCG";
+	font-size: 14px;
+	color: black;
+}
+
+.no-grow{
+  flex-grow: 0 !important;
+}
+
+
+.image {
+	padding-bottom: 1.25rem;
+}
+
+.title-main {
+	font-family:"TeXR";
+	font-size: 14px;
+	color: black;
+	margin-bottom: 8px;
+}
+
+.padding {
+	padding-bottom: 1.5rem;
+}
+
+.bold {
+	font-family:"TeXB";
+}
+
+
+.column-section {
+	padding-bottom: 1.5rem;
+}
+
+.press {
+	font-family: "Pressuru";
+	font-size: 13px;
+}
+
+p.blue::after{
+   content: '';
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-left: 5px;
+   /*margin-right: 2px;*/
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+   background-color: #69b6d5;
+   vertical-align: middle;
+   margin-bottom:2px;
+}
+
+p.red::after{
+   content: '';
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-left: 5px;
+   /*margin-right: 2px;*/
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+   background-color: #FC6665;
+   vertical-align: middle;
+   margin-bottom:2px;
+}
+
+/* BULMA OVERRIDES */
+.navbar-item {
+  flex-grow: 1;
+}
+
+
+.navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: transparent; 
+ }
+ 
+ a.navbar-item:hover, a.navbar-item.is-active,
+ .navbar-link:hover,
+ .navbar-link.is-active {
+   background-color: #fafafa;
+   color: inherit;
+ }
+ /*
+ .navbar-dropdown {
+     background-color: white;
+     border-bottom-left-radius: 6px; 
+     border-top: 0px solid #dbdbdb;
+     box-shadow: 0 0px 0px rgba(10, 10, 10, 0.1);
+     font-size: 0.875rem;
+     left: 0;
+     min-width: 100%;
+     position: absolute;
+     top: 100%;
+     z-index: 20;
+   }*/
+
+/* HOVER STUFF */
+
+.hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.hover-image {
+    visibility: hidden;
+}
+
+body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: none;
+}
+
+.hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+/* Change width and height to scale images */
+    width: 90vw;
+    height: 90vh;
+}
+
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+
+/* PEACE PAGE */
+
+.typeface {
+	color: red;
+	padding-top: 1.5rem;
+	font-family: 'TexR';
+	font-size: 5rem;
+}
+
+.biotin {
+	font-family: 'Biotin';
+	font-size: 6rem;
+}
+
+
+@font-face {
+  font-family: "Biotin";
+  src: url("../peace/peace-fonts/Biotin-Regular.otf");
+}
+
+.auto {
+	font-family: 'Auto';
+	font-size: 6rem;
+}
+
+@font-face {
+  font-family: "Auto";
+  src: url("../peace/peace-fonts/RSAutoGX.ttf");
+}
+
+.cursed {
+	font-family: 'Cursed';
+	font-size: 6rem;
+}
+
+@font-face {
+  font-family: "Cursed";
+  src: url("../peace/peace-fonts/RSCursedGX.ttf");
+}
+
+.hightide {
+	font-family: 'HighTide';
+	font-size: 6rem;
+}
+
+@font-face {
+  font-family: "HighTide";
+  src: url("../peace/peace-fonts/RSHiTide-Rounded.otf");
+}
+
+.professor {
+	font-family: 'Professor';
+	font-size: 10rem;
+}
+
+@font-face {
+  font-family: "Professor";
+  src: url("../peace/peace-fonts/RSProfessor-Regular.otf");
+}
+
+.raine {
+	font-family: 'Raine';
+	font-size: 4rem;
+}
+
+@font-face {
+  font-family: "Raine";
+  src: url("../peace/peace-fonts/RSRaineGX.ttf");
+}
+
+.softcore {
+	font-family: 'Softcore';
+	font-size: 4rem;
+}
+
+@font-face {
+  font-family: "Softcore";
+  src: url("../peace/peace-fonts/RSSoftcore-Regular");
+}
+
+
+/* Make it move */
+
+#cloud1 {
+  /*background-image: url("../img/body.png");*/
+  width: 100vw;
+  /*height: 40vh;*/
+  position: fixed;
+  top: 0;
+  /*height: 50px;*/
+}
+
+#cloud2 {
+	width: 100%;
+	position: fixed;
+	bottom: -200px;
+}
+
+.marquee {
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-animation: marquee 50s linear infinite;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee-reverse {
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-animation: marqueeR 50s linear infinite;
+  animation: marqueeR 50s linear infinite;
+}
+
+
+@-webkit-keyframes marquee {
+  from {
+    left: -100%
+  }
+  to {
+    left: 100%
+  }
+}
+
+@keyframes marquee {
+  from {
+    left: -100%
+  }
+  to {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes marqueeR {
+  from {
+    right: -100%
+  }
+  to {
+    right: 100%
+  }
+}
+
+@keyframes marqueeR {
+  from {
+    right: -100%
+  }
+  to {
+    right: 100%
+  }
+}
+
+
+
+
+
+
+
+
+
