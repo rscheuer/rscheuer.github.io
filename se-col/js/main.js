@@ -12,8 +12,10 @@ var HttpClient = function () {
 
 // GET BLOCKS
 
+var channel = "se01";
+
 var client = new HttpClient();
-client.get('https://api.are.na/v2/channels/se01/contents', function(response) {
+client.get('https://api.are.na/v2/channels/'+channel+'/contents', function(response) {
 //	console.log(response);
 	var obj = JSON.parse(response);
 	
@@ -176,6 +178,16 @@ function insertIssue(num, title, description, date) {
   var html_to_insert = "<div class='issue-item'><p class='item-meta'><span class='item-date'>"+date+"</span> by <span class='item-author'>Ryan Online</span> <span class='item-type'>TOOLS</span></p><p class='item-info'><a href='http://glyphdrawing.club'><span class='item-name'>Glyphdrawing.club</span></a> Free web-based pixel art editor</p></div>";
   document.getElementById('mydiv').insertAdjacentHTML('beforeend', html_to_insert);
 }
+
+
+function iterateThroughIssues(){
+	for(issue in issues){
+		let rawData = fs.readFileSync('./se-issues/'+issue+'/data.json');
+		let data = JSON.parse(rawData);
+		//build site
+	}
+}
+
 
 
     
