@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+
+.canvas {
+	align-content: center;
+}
+
+#new {
+	width: 100%;
+    height: auto;
+    margin: 0 auto;
+/*    padding: 10px;*/
+    position: relative;
+    background-color: red;
+}

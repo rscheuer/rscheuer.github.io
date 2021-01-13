@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'GT';
+    src: url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2'),
+        url('../fonts/GTWalsheimPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio';
+    src: url('../fonts/StudioFeixenSansVariable-Regular.woff2') format('woff2'),
+        url('../fonts/StudioFeixenSansVariable-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+	background: url(../img/containe.jpg) rgba(5, 5, 5, 0.96);
+	background-size: cover;
+}
+
+
+
+
+#vaccines, #header {
+	width: 100%;
+	margin-top: 8px;
+	position: relative !important;
+	font-family: 'GT';
+}
+
+table {
+	position: relative;
+}
+
+#vaccines td, #header th {
+  /*border-bottom: 1px solid #ddd;*/
+  padding: 8px;
+  color: #101010;
+}
+
+
+
+#header th {
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #333;
+	text-align: left;
+}
+
+
+#vaccines th {
+	position: sticky;
+}
+
+
+#cv-chart {
+	background-color: #d6d6d6;
+	padding: 8px;
+	height: 80vh;
+	overflow-y: scroll;
+	/*position: relative;*/
+}
+
+.sticky {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	background-color: #d6d6d6;
+	color: #101010;
+	font-family: 'GT';
+	/*position: fixed; !important;*/
+}
+
+/*.phase-indicator {
+	border: 1px solid #333;
+	width: 8px !important;
+	height: 8px !important;
+	border-radius: 10px;
+}*/
+
+.phase-indicator {
+	display: inline;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    padding-left: 6.5px;
+	padding-right: 6.5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+    /*background: #fff;*/
+    border: 1.5px solid #101010;
+    color: #101010;
+    text-align: center;
+
+    font: 12px Arial, sans-serif;
+}
+
+.cv-container {
+	border-radius: 8px !important;
+	overflow: hidden;
+	box-shadow: 0 0 41px rgba(22, 19, 19, 0.64);
+}
+
+.flask {
+	position: absolute;
+	width: 50%;
+	text-align: center;
+}
+
+.flask img {
+	width: 100%;
+}
+
+.info {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
