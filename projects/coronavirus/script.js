@@ -1,6 +1,8 @@
     import * as THREE from './three/three.module.js';
 
     import { OBJLoader } from './three/OBJLoader.js';
+    
+    import { DeviceOrientationControls } from './three/DeviceOrientationControls.js';
 
     // import { OrbitControls } from './OrbitControls.js';
 
@@ -72,6 +74,27 @@
             console.log( item, loaded, total );
 
         };
+		
+		// device orientation
+		if (window.DeviceOrientationEvent) {
+		    window.addEventListener('deviceorientation', function (eventData) {
+		
+		
+		        var tiltX = Math.round(eventData.gamma * 2 );
+		
+		
+		        var tiltY =  Math.round(eventData.beta * 2);
+		
+		        deviceOrientationHandler(tiltX,tiltY);
+		
+		    }, false);
+		}
+		
+		function deviceOrientationHandler(tiltX, tiltY){
+		
+		      mouseX = tiltX;
+		      mouseY = tiltY;
+		}
 
         // texture
 
