@@ -19,7 +19,8 @@ body {
 }
 .scrolling-wrapper-flexbox .card {
   flex: 0 0 auto;
-  margin-right: -16vh;
+  margin-right: -8vh;
+  margin-left: -8vh;
 }
 
 .title {
@@ -63,7 +64,7 @@ body {
 
 .end {
   margin-left: -3vh;
-  z-index: 30;
+  /* z-index: 2; */
 }
 
 .front {
