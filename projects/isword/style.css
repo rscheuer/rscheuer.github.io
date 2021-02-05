@@ -71,6 +71,11 @@ body {
 	z-index: 2;
 }
 
+.small{
+  margin-right: -10.2vh !important;
+  margin-left: -10.2vh !important;
+}
+
 .scrolling-wrapper, .scrolling-wrapper-flexbox {
   /*height: 80px;*/
   height: 100vh;
