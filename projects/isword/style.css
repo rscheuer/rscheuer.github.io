@@ -1,0 +1,86 @@
+body {
+  background-color: white;
+  color: black;
+  /*letter-spacing: 2px;*/
+  /*word-spacing: 1px;*/
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+
+/* horizontal scroll */
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+  /*background-color: blue;*/
+}
+.scrolling-wrapper-flexbox .card {
+  flex: 0 0 auto;
+  margin-right: -16vh;
+}
+
+.title {
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	width: 50vw;
+	text-align: center;
+}
+
+.hilt img {
+	max-height: 100vh;
+}
+
+.hilt {
+	margin-right: -38vh !important;
+	z-index: 30;
+}
+
+.init {
+	z-index: 2;
+}
+
+.card {
+  /*border: 2px solid #a6192d;*/
+  /*width: 450px;*/
+  /*height: 390ox;*/
+  /*margin: 12px;*/
+  /*background: black;*/
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.blade img {
+	max-height: 40vh;
+}
+
+.end {
+	margin-left: -3vh;
+}
+
+.front {
+	z-index: 2;
+}
+
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  /*height: 80px;*/
+  height: 100vh;
+  /*margin-bottom: 20px;*/
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
