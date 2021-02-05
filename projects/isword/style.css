@@ -62,7 +62,8 @@ body {
 }
 
 .end {
-	margin-left: -3vh;
+  margin-left: -3vh;
+  z-index: 30;
 }
 
 .front {
