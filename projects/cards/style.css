@@ -114,3 +114,12 @@ scrollbar-width: none;  /* Firefox */
 	color: #a8f94b;
 	/*transform: rotate(-1deg);*/
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1200px) {
+	.stack__card{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
