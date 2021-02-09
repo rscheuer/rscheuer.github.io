@@ -1,0 +1,116 @@
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  /*height: 100vh;*/
+  background-color: #c7c7c7 !important;
+}
+body {
+	background-color: #c7c7c7;
+	/* margin: 0px !important; */
+}
+
+body::-webkit-scrollbar {
+	display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.stack__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /*box-shadow: 0 -1px 3px rgba(0,0,0,0.1), 0 -1px 2px rgba(0,0,0,0.25);*/
+  /*font-size: 10rem;*/
+  scroll-snap-align: start;
+}
+.stack__card:nth-child(1) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.stack__card:nth-child(2) {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.stack__card:nth-child(3) {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.stack__card:nth-child(4) {
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+}
+.stack__card:nth-child(5) {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*display: flex;*/
+	/*border-radius: 20px 20px 0px 0px;*/
+	border-radius: 20px;
+	padding: 30px;
+	/*overflow: scroll;*/
+}
+
+.rs-title {
+	font-size: 5rem;
+}
+
+.stack {
+	border-radius: 20px;
+	/*overflow: hidden;*/
+	/*margin-top: 20px;*/
+	scroll-snap-type: mandatory;
+}
+
+.one {
+	background-color: #e3342f;
+	color: #000000;
+}
+
+.two {
+	/*background-color: #38c172;*/
+	background-color: #fbfbfc;
+	color: #bb63f0;
+	/*transform: rotate(1deg);*/
+}
+
+.three {
+	 /*background-color: #3490dc;*/
+	 background-color: #4bc6ff;
+	 color: #eefc33;
+	 /*transform: rotate(-2deg);*/
+}
+
+.four {
+	background-color: #f66d9b;
+	color: #d40800;
+	/*transform: rotate(2deg);*/
+}
+
+.five {
+	/*background-color: #f6993f;*/
+	background-color: #9f5d2a;
+	color: #a8f94b;
+	/*transform: rotate(-1deg);*/
+}
