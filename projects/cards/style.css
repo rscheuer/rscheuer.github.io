@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
 body {
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
+/* overflow-x: hidden; */
 }
 
 *,
@@ -91,6 +92,7 @@ scrollbar-width: none;  /* Firefox */
 	/*overflow: hidden;*/
 	/*margin-top: 20px;*/
 	scroll-snap-type: mandatory;
+	/* overflow-x: hidden; */
 }
 
 .one {

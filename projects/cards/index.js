@@ -24,10 +24,10 @@ $(window).scroll(function () {
         // console.log(s);
 		if (pos < vh * startPos) {
 			// If element has past the starting threshold, we fade it
-			$(this).css("transform", "scale(" + scale(pos, 0, 3000, 1, 1.3) + ")");
+			$(this).css("transform", "scale(" + scale(pos, 0, 2000, 1, 1.1) + ")");
 			// console.log(pos);
 		} else {
-			$(this).css("transform", "scale(" + scale(pos, 0, 3000, 1, 1.3) + ")");
+			$(this).css("transform", "scale(" + scale(pos, 0, 2000, 1, 1.1) + ")");
 		}
 	});
 });
