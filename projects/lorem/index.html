@@ -17,6 +17,11 @@
     }
     body{
       /* background-color: rgb(240, 240, 240); */
+      /* background-color: black;
+      color: white; */
+    }
+    
+    .dark{
       background-color: black;
       color: white;
     }
@@ -30,5 +35,18 @@
   
   <div id="output"></div>
   
-</body>
-</html>
+  
+  <script>
+    window.onclick = function () {
+      //do some stuff
+      // document.body.style.backgroundColor = "red";
+      darkmode();
+    }
+    
+    function darkmode() {
+        var x = document.getElementsByTagName("BODY")[0];
+        x.classList.toggle("dark");
+      }
+    </script>
+  </body>
+  </html>
