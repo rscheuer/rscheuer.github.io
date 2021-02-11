@@ -65,7 +65,7 @@ function draw() {
         boxes[checkIndex].html(res[checkIndex])
       } else {
         // boxes[checkIndex].checked(true);
-        boxes[checkIndex].html('&nbsp;&nbsp;')
+        boxes[checkIndex].html('..')
       }
     }
   }
