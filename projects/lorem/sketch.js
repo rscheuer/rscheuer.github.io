@@ -28,7 +28,9 @@ function setup() {
   for (var y = 0; y < rows; y++) {
     for (var x = 0; x < cols; x++) {
       // var box = createCheckbox();
-      var box = createSpan('--');
+      var ce = x + y * cols;
+      // var box = createSpan('--');
+      var box = createSpan(res[ce]);
       box.style('display', 'inline');
       box.parent('mirror');
       boxes.push(box);
@@ -62,10 +64,15 @@ function draw() {
       if (bright > threshold) {
         // boxes[checkIndex].checked(false);
         
-        boxes[checkIndex].html(res[checkIndex])
+        // boxes[checkIndex].html(res[checkIndex])
+        boxes[checkIndex].style('font-weight', 100);
+        // boxes[checkIndex].style('color','grey');
       } else {
         // boxes[checkIndex].checked(true);
-        boxes[checkIndex].html('..')
+        // boxes[checkIndex].html('..')
+        // boxes[checkIndex].html(res[checkIndex])
+        boxes[checkIndex].style('font-weight', 800);
+        // boxes[checkIndex].style('color','darkgrey');
       }
     }
   }
