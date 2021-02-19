@@ -32,6 +32,7 @@ function setup() {
       // var box = createSpan('--');
       var box = createSpan(res[ce]);
       box.style('display', 'inline');
+      box.addClass('letter');
       box.parent('mirror');
       boxes.push(box);
     }
@@ -65,13 +66,15 @@ function draw() {
         // boxes[checkIndex].checked(false);
         
         // boxes[checkIndex].html(res[checkIndex])
-        boxes[checkIndex].style('font-weight', 100);
+        // boxes[checkIndex].style('font-weight', 100);
+        boxes[checkIndex].removeClass('bold');
         // boxes[checkIndex].style('color','grey');
       } else {
         // boxes[checkIndex].checked(true);
         // boxes[checkIndex].html('..')
         // boxes[checkIndex].html(res[checkIndex])
-        boxes[checkIndex].style('font-weight', 800);
+        // boxes[checkIndex].style('font-weight', 800);
+        boxes[checkIndex].addClass('bold')
         // boxes[checkIndex].style('color','darkgrey');
       }
     }
