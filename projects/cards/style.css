@@ -160,11 +160,22 @@ p{
 	border-radius: 10px;
 	transition: all 0.2s;
 	font-family: 'EL';
+	pointer-events: bounding-box;
 }
 
-.glyph-item:hover{
+
+
+.glyph-box{
+	background-color: #000000;
+	border-radius: 10px;
+	transition: all 0.2s;
+	pointer-events: none;
+}
+
+.glyph-item:hover > .glyph-box { 
 	transform: scale(3.5);
-	pointer-events: all;
+	/* background-color: yellow;  */
+	pointer-events: none;
 }
 
 .testing{
