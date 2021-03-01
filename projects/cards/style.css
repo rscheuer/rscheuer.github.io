@@ -4,6 +4,12 @@ html {
   /*height: 100vh;*/
   background-color: #c7c7c7 !important;
 }
+
+@font-face{
+	font-family: 'EL';
+	src: url('ECCOLabv1.002-Spectacular.otf');
+}
+
 body {
 	background-color: #c7c7c7;
 	/* margin: 0px !important; */
@@ -85,6 +91,11 @@ scrollbar-width: none;  /* Firefox */
 
 .rs-title {
 	font-size: 5rem;
+	line-height: 5rem;
+}
+
+p{
+	font-size: 2rem;
 }
 
 .stack {
@@ -127,11 +138,118 @@ scrollbar-width: none;  /* Firefox */
 	/*transform: rotate(-1deg);*/
 }
 
+/* GRIDS */
+.glyph-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	  ". . . . . . . ."
+	  ". . . . . . . ."
+	  ". . . . . . . ."
+	  ". . . . . . . ."
+	  ". . . . . . . .";
+}
+.glyph-item{
+	background-color: #000000;
+	color: #e0e0e0;
+	text-align: center;
+	margin: 2px;
+	font-size: 80px;
+	border-radius: 10px;
+	transition: all 0.2s;
+	font-family: 'EL';
+}
+
+.glyph-item:hover{
+	transform: scale(3.5);
+	pointer-events: all;
+}
+
+.testing{
+	font-family: 'EL';
+	font-size: 100px;
+	color: #14234d;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 50%;
+	height: 5px;
+	border-radius: 5px;  
+	background: #eefc33;
+	outline: none;
+	opacity: 1.0;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%; 
+	background: #eefc33;
+	cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #eefc33;
+	cursor: pointer;
+  }
+
+[contenteditable] {
+	outline: 0px solid transparent;
+  }
+
+
+.oval {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	text-align: center;
+	/* background: #a84909; */
+	border-radius: 50%;
+	border: 1px solid #a8f94b;
+	background-color: #9f5d2a;
+	font-size: 80px;
+}
+.oval:hover{
+	color: #9f5d2a;
+	background-color: #a8f94b;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1200px) {
 	.stack__card{
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	/* GRIDS */
+	.glyph-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr  1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+		". . . . ."
+		". . . . ."
+		". . . . ."
+		". . . . ."
+		". . . . ."
+		". . . . .";
+	}
+
+	.glyph-item{
+		font-size: 50px;
 	}
 }
