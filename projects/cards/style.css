@@ -77,6 +77,7 @@ scrollbar-width: none;  /* Firefox */
 	/*border-radius: 20px 20px 0px 0px;*/
 	border-radius: 20px;
 	padding: 30px;
+	overflow: hidden;
 	/*overflow: scroll;*/
 	transition: all 0.2s ease-in-out;
 }
@@ -261,10 +262,24 @@ p{
 	}
 
 	.glyph-item{
-		font-size: 35px;
+		font-size: 25px;
+	}
+
+	.content p{
+		line-height: 2rem;
+	}
+
+	.testing{
+		line-height: 6rem !important;
 	}
 
 	.oval{
 		font-size: 40px;
 	}
+
+	.rs-title {
+		font-size: 3rem;
+		line-height: 2rem;
+	}
+	
 }
