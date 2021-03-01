@@ -208,6 +208,8 @@ p{
 	height: 25px;
 	border-radius: 50%; 
 	background: #eefc33;
+	border: none;
+	outline: none;
 	cursor: pointer;
 	z-index: 20;
   }
@@ -217,6 +219,7 @@ p{
 	height: 25px;
 	border-radius: 50%;
 	background: #eefc33;
+	outline: none;
 	cursor: pointer;
   }
 
