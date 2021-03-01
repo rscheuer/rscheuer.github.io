@@ -13,7 +13,6 @@ html {
 body {
 	background-color: #c7c7c7;
 	/* margin: 0px !important; */
-	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -24,7 +23,6 @@ body::-webkit-scrollbar {
 body {
 -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
-/* overflow-x: hidden; */
 }
 
 *,
@@ -199,6 +197,7 @@ p{
 	opacity: 1.0;
 	-webkit-transition: .2s;
 	transition: opacity .2s;
+	z-index: 20;
   }
   
   .slider::-webkit-slider-thumb {
@@ -209,6 +208,7 @@ p{
 	border-radius: 50%; 
 	background: #eefc33;
 	cursor: pointer;
+	z-index: 20;
   }
   
   .slider::-moz-range-thumb {
