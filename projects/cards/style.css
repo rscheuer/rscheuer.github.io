@@ -156,7 +156,7 @@ p{
 	color: #e0e0e0;
 	text-align: center;
 	margin: 2px;
-	font-size: 80px;
+	font-size: 60px;
 	border-radius: 10px;
 	transition: all 0.2s;
 	font-family: 'EL';
@@ -250,6 +250,6 @@ p{
 	}
 
 	.glyph-item{
-		font-size: 50px;
+		font-size: 35px;
 	}
 }
