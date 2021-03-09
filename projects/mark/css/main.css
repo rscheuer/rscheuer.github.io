@@ -78,8 +78,13 @@ body {
 
 .fullheight{
 	min-height: 100vh;
+	background-color: black;
+	/* margin-top: 20px; */
 }
 
+.marks{
+	margin-bottom: 20px;
+}
 
 .rain p span{
 	margin-right: 12px;
