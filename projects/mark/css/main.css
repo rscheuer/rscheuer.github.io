@@ -6,6 +6,7 @@ body {
 	margin: 0px;
 	background-color: black;
 	color: white;
+	overflow-x: hidden !important;
 }
 
 .s-hero {
